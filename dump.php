@@ -30,6 +30,14 @@
                     </ul>
                 </div>
             </section>
+            <section id="videos">
+                <h2 class="title">videos</h2>
+                <div class="content">
+                    <ul class="word-list">
+                        <li>There's no purple light<br><a href="https://youtu.be/CoLQF3cfxv0">https://youtu.be/CoLQF3cfxv0</a></li>
+                    </ul>
+                </div>
+            </section>
         </div>
     </div>
 </body>
