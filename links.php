@@ -34,7 +34,17 @@
                 <h2 class="title">videos</h2>
                 <div class="content">
                     <ul class="word-list">
+                        <li>DYNAMO DREAM - Episode 1<br><a href="https://youtu.be/LsGZ_2RuJ2A">https://youtu.be/LsGZ_2RuJ2A</a></li>
                         <li>There's no purple light<br><a href="https://youtu.be/CoLQF3cfxv0">https://youtu.be/CoLQF3cfxv0</a></li>
+                        <li>The Bizzare Case of Stephen McDaniel<br><a href="https://youtu.be/HkRjIq8Cp2A">https://youtu.be/HkRjIq8Cp2A</a></li>
+                    </ul>
+                </div>
+            </section>
+            <section id="films">
+                <h2 class="title">free films</h2>
+                <div class="content">
+                    <ul class="word-list">
+                        <li>KOOYANISQATSI</li>
                     </ul>
                 </div>
             </section>
