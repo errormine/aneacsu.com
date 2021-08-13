@@ -8,7 +8,7 @@
 
     color: #fafcfb;
     font-size: 1.25em;
-    font-family: monospace;
+    font-family: Monaco, "Lucida Console", Terminal, monospace;
 }
 
 #header {
@@ -99,7 +99,7 @@ img, video {
 }
 
 .content .mono {
-    font-family: monospace;
+    font-family: Monaco, "Lucida Console", Terminal, monospace;
 }
 
 .link-list li {
