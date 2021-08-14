@@ -41,6 +41,10 @@
                             <h4 class="subtitle">I tried learning how to make Roblox games and have a couple unfinished ones that can be found here.</h4>
                         </li>
                         <li>
+                            <h2 class="content-h2"><a href="https://github.com/prycaustic/b1pod">b1pod</a></h2>
+                            <h4 class="subtitle">Another Discord bot with some random commands.</h4>
+                        </li>
+                        <li>
                             <h2 class="content-h2"><a href="https://github.com/Stronous/bent-bot">bent-bot</a></h2>
                             <h4 class="subtitle">A Discord bot that I made for some friends.</h4>
                         </li>
