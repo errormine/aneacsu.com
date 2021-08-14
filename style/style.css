@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
 :root {
     --bg-color: #2b2a33;
     --section-color: #1c1b22;
@@ -7,8 +9,8 @@
     --subtitle-color: #929298;
 
     color: #fafcfb;
-    font-size: 12pt;
-    font-family: 'Lucida Console', Terminal, monospace;
+    font-size: 18px;
+    font-family: 'Fira Code', 'Lucida Console', monospace;
 }
 
 #header {
@@ -18,8 +20,12 @@
     box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
 }
 
+#header section {
+    padding-bottom: 1em;
+}
+
 .title {
-    font-size: 1.5em;
+    font-size: 26px;
     color: var(--title-color);
 }
 
@@ -96,19 +102,18 @@ img, video {
 
 .content-h2 {
     color: var(--title-color);
-    font-size: 1.25em;
-    padding: 1em;
+    font-size: 20px;
+    margin-bottom: 1em;
 }
 
-.content p {
-    font-family: serif;
-    font-size: 14pt;
+.content {
+    margin-top: 1em;
+}
+
+.content .serif {
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 1em 0;
     display: inline-block;
-}
-
-.content .mono {
-    font-family: "Lucida Console", Terminal, monospace;
 }
 
 .link-list li {
@@ -122,18 +127,21 @@ body {
 }
 
 section {
-    padding: 1em 25%;
-    font-size: 1.25em;
+    padding: 1em 25% 0 25%;
     width: 50%;
 }
 
 nav {
-    padding: 1em 0 0 0;
+    padding: 1em 0  ;
 }
 
 nav li {
     display: inline;
     margin: 0 1em 0 0;
+}
+
+.link-list {
+    margin: 1em 0;
 }
 
 li {
@@ -166,7 +174,7 @@ p {
 }
 
 pre {
-    font-size: 12pt;
+    font-size: 90%;
     color: #EEEEEE;
     padding: 1em;
     margin: 1em 0;

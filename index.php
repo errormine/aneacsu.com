@@ -27,7 +27,6 @@
             <section id="projects">
                 <h2 class="title">projects</h2>
                 <div class="content">
-                    <p><em>Small collection of things I have worked on</em></p>
                     <ul class="link-list">
                         <li>
                             <h2 class="content-h2"><a href="https://github.com/prycaustic/aneacsu.com">This Website</a></h2>
