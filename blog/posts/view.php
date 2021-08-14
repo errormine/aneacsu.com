@@ -36,11 +36,11 @@ $row = mysqli_fetch_assoc($result);
                 <h4 class="subtitle">
                     <?php echo $row["date"]; ?>
                 </h4>
-                <div class="large-img">
-                    <img src=<?php echo "'" . $row["thumb"] . "'"; ?> alt="">
-                    <br>
-                    <a href=<?php echo "'" . $row["thumb"] . "'"; ?> class="img-view-link">view full size</a>
-                </div>
+                <?php
+                    if (!empty($row["thumb"])) {
+                        echo "<div class='large-img'><img src='" . $row["thumb"] . "'><br><a href='" . $row["thumb"] . "' class='img-view-link'>view full size</a></div>";
+                    }
+                ?>
                 <div class="content">
                     <?php echo $row["content"]; ?>
                 </div>
