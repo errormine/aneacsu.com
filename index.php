@@ -9,7 +9,7 @@
             <section id="about">
                 <h2 class="title">about</h2>
                 <div class="content">
-                    <p class="mono">infosec / game dev / idk / swag</p>
+                    infosec / game dev / idk / swag
                 </div>
             </section>
             <section id="social">
