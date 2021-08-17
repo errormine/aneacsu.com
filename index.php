@@ -2,9 +2,7 @@
 <body>
     <?php include("include/header.html")?>
     <div id="body">
-        <section id="nav">
-            <?php include("include/nav.html")?>
-        </section>
+        <?php include("include/nav.html")?>
         <div id="main">
             <section id="about">
                 <h2 class="title">about</h2>
@@ -32,10 +30,10 @@
                             <h2 class="content-h2"><a href="https://github.com/prycaustic/aneacsu.com">This Website</a></h2>
                             <h4 class="subtitle">This is a link to the github repo for this website.</h4>
                         </li>
-                        <li>
+                        <!--<li>
                             <h2 class="content-h2"><a href="/courses/web-dev/">Web Development Course</a></h2>
                             <h4 class="subtitle">Full web dev course that teaches the basics of HTML / CSS and including some JavaScript. Contains lengthy lectures and 16 projects to complete and help you get a grasp on the fundamentals of web development.</h4>
-                        </li>
+                        </li>-->
                         <li>
                             <h2 class="content-h2"><a href="https://www.roblox.com/users/13627473/profile">Roblox Games</a></h2>
                             <h4 class="subtitle">I tried learning how to make Roblox games and have a couple unfinished ones that can be found here.</h4>

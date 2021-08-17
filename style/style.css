@@ -37,12 +37,18 @@
 }
 
 #header section {
-    padding-bottom: 1em;
+    width: 50%;
+    padding: 2em 25%;
 }
 
 .title {
     font-size: 26px;
     color: var(--title-color);
+}
+
+#body {
+    padding: 1em 25% 0 25%;
+    width: 50%;
 }
 
 #main .title:before {
@@ -123,7 +129,7 @@ img, video {
 }
 
 .content {
-    margin-top: 1em;
+    margin: 1em 0;
 }
 
 .content p {
@@ -144,8 +150,7 @@ body {
 }
 
 section {
-    padding: 1em 25% 0 25%;
-    width: 50%;
+    padding-top: 1em;
 }
 
 nav {
@@ -155,10 +160,6 @@ nav {
 nav li {
     display: inline;
     margin: 0 1em 0 0;
-}
-
-.link-list {
-    margin: 1em 0;
 }
 
 li {
@@ -206,7 +207,7 @@ code {
 }
 
 @media only screen and (max-width: 960px) {
-    section {
+    #main {
         width: 90%;
         padding: 1em 5%;
     }
