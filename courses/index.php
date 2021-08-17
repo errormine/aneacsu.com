@@ -7,6 +7,7 @@
             <?php include($_SERVER['DOCUMENT_ROOT'] . "/courses/assets/include/courses-nav.html") ?>
             <div class="main">
                 <section id="home">
+                    Please check back soon!
                 </section>
             </div>
         </div>
