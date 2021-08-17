@@ -16,7 +16,7 @@
                     <ul class="link-list">
                         <li><a href="https://github.com/prycaustic">github</a></li>
                         <li><a href="https://www.youtube.com/channel/UCE6z-Hy7aQl-NyM2BKcw-jA">youtube</a></li>
-                        <li><a href="https://www.goodreads.com/user/show/98702910-andrei">goodreads</a></li>
+                        <li><a href="https://www.goodreads.com/aneacsu">goodreads</a></li>
                         <li><a href="https://letterboxd.com/prycaustic/">letterboxd</a></li>
                         <li><a href="https://www.last.fm/user/prycaustic">last.fm</a></li>
                     </ul>
