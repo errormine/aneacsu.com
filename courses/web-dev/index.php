@@ -3,9 +3,9 @@
 </head>
     <body>
         <?php include($_SERVER['DOCUMENT_ROOT'] . "/courses/assets/include/courses-header.html") ?>
-        <div class="body">
+        <div id="body">
             <?php include($_SERVER['DOCUMENT_ROOT'] . "/courses/assets/include/courses-nav.html") ?>
-            <div class="main">
+            <div id="main">
                 <section id="home">
                     <h2 class="title">Web Development Home</h2>
                     <div class="content">
