@@ -7,7 +7,7 @@
             <section id="about">
                 <h2 class="title">about</h2>
                 <div class="content">
-                    infosec / game dev / idk / swag
+                    infosec / idk what i'm doing
                 </div>
             </section>
             <section id="social">
