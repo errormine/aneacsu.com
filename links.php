@@ -2,9 +2,7 @@
 <body> 
     <?php include("include/header.html")?>
     <div id="body">
-        <section id="nav">
-            <?php include("include/nav.html")?>
-        </section>
+        <?php include("include/nav.html")?>
         <div id="main">
             <section id="websites">
                 <h2 class="title">websites</h2>
