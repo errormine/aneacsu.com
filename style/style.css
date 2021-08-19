@@ -23,6 +23,7 @@
     --link-hover: #e0a581;
     --title-color: #81ace0;
     --subtitle-color: #929298;
+    --code-color: #85d8d0;
 
     color: #fafcfb;
     font-size: 18px;
@@ -207,7 +208,10 @@ pre {
 }
 
 code {
+    color: var(--code-color);
     font-family: monospace;
+    background-color: var(--section-color);
+    margin: 0 .2em;
 }
 
 @media only screen and (max-width: 960px) {
