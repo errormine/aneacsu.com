@@ -150,6 +150,8 @@ img, video {
 }
 
 body {
+    width: calc( 100% );
+    max-width: calc( 100vw - 1em );
     background-color: var(--bg-color);
     background-image: url(../images/az-subtle.png);
 }
