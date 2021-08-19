@@ -9,7 +9,7 @@
                 <section id="home">
                     <h2 class="title">Web Development Home</h2>
                     <div class="content">
-                        <p>Welcome and thank you for looking at my Web Development Course. It is based on a couple classes I have taken at school and many onlincd resources that I've compiled in the resources tab. This course goes over HTML5 and CSS as well as some JavaScript and will help you get the fundamentals of creating websites mastered.</p>
+                        <p>Welcome and thank you for looking at my Web Development Course. It is based on a couple classes I have taken at school and many online resources that I've compiled in the resources tab. This course goes over HTML5 and CSS as well as some JavaScript and will help you get the fundamentals of creating websites mastered.</p>
                         <p>Here you can find links to all the different pages in the this course:</p>
                         <h2 class="content-h2">HTML5</h2>
                         <ul>
