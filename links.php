@@ -8,6 +8,7 @@
                 <h2 class="title">websites</h2>
                 <div class="content">
                     <ul class="word-list">
+                        <li>ASCII Art and ANSI Art<br><a href="http://www.roysac.com/default.html">http://www.roysac.com/default.html</a></li>
                         <li>Terms of Service Didn't Read<br><a href="https://tosdr.org/en/frontpage">https://tosdr.org/en/frontpage</a></li>
                         <li>This is a motherfucking website.<br><a href="http://motherfuckingwebsite.com/">http://motherfuckingwebsite.com/</a></li>
                         <li>Take Control<br><a href="https://www.humanetech.com/take-control">https://www.humanetech.com/take-control</a></li>
