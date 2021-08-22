@@ -82,7 +82,7 @@
                             <a href="/courses/web-dev/lesson02.php">&lt; Page 2: Text Editors</a>
                         </li>
                         <li class="next">
-                            <a href="/courses/web-dev/lesson03.php">Page 4:  ></a>
+                            <a href="/courses/web-dev/lesson04.php">Page 4: Common Tags ></a>
                         </li>
                     </ul>
                 </section>

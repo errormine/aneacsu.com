@@ -214,6 +214,9 @@ code {
     color: var(--code-color);
     font-family: monospace;
     background-color: var(--section-color);
+}
+
+p code {
     margin: 0 .2em;
 }
 

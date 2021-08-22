@@ -8,12 +8,14 @@
                 <h2 class="title">websites</h2>
                 <div class="content">
                     <ul class="word-list">
+                        <li>Radio Garden<br><a href="http://radio.garden/">http://radio.garden/</a></li>
+                        <li>Electronic Frontier Foundation<br><a href="https://www.eff.org/">https://www.eff.org/</a></li>
                         <li>ASCII Art and ANSI Art<br><a href="http://www.roysac.com/default.html">http://www.roysac.com/default.html</a></li>
                         <li>Terms of Service Didn't Read<br><a href="https://tosdr.org/en/frontpage">https://tosdr.org/en/frontpage</a></li>
-                        <li>This is a motherfucking website.<br><a href="http://motherfuckingwebsite.com/">http://motherfuckingwebsite.com/</a></li>
                         <li>Take Control<br><a href="https://www.humanetech.com/take-control">https://www.humanetech.com/take-control</a></li>
                         <li>1MB Club<br><a href="https://1mb.club/">https://1mb.club/</a></li>
                         <li>OverTheWire: Wargames<br><a href="https://overthewire.org/wargames/">https://overthewire.org/wargames/</a></li>
+                        <li>This is a motherfucking website.<br><a href="http://motherfuckingwebsite.com/">http://motherfuckingwebsite.com/</a></li>
                         <li>spyware watchdog<br><a href="https://spyware.neocities.org/articles/index.html">https://spyware.neocities.org/articles/index.html</a></li>
                         <li>close this World, open the Next<br><a href="https://lainzine.org/">https://lainzine.org/</a></li>
                         <li>random wikipedia article<br><a href="https://en.wikipedia.org/wiki/Special:Random">https://en.wikipedia.org/wiki/Special:Random</a></li>
