@@ -1,8 +1,6 @@
 <?php include("include/head.html")?>
-<body> 
-    <?php include("include/header.html")?>
-    <div id="body">
-        <?php include("include/nav.html")?>
+    <body> 
+        <?php include("include/header.html")?>
         <main>
             <section id="websites">
                 <h2 class="title">websites</h2>
@@ -45,6 +43,5 @@
                 </div>
             </section>
         </main>
-    </div>
-</body>
+    </body>
 </html>
