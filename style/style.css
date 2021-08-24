@@ -56,7 +56,7 @@
     width: 50%;
 }
 
-#main .title:before {
+main .title:before {
     content: "> "
 }
 

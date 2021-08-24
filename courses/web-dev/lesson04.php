@@ -5,7 +5,7 @@
         <?php include($_SERVER['DOCUMENT_ROOT'] . "/courses/assets/include/courses-header.html") ?>
         <div id="body">
             <?php include($_SERVER['DOCUMENT_ROOT'] . "/courses/assets/include/courses-nav.html") ?>
-            <div id="main">
+            <main>
                 <section id="common-elements">
                     <h2 class="title">Common HTML Elements</h2>
                     <div class="content">
@@ -87,8 +87,8 @@
                         <pre><code data-include="/courses/web-dev/assets/lesson04/html/01.html"></code></pre>
                     </div>
                 </section>
-            </div>
-            <div id="footer">
+            </main>
+            <footer>
                 <section>
                     <ul id="lesson-nav">
                         <li class="previous">
@@ -99,7 +99,7 @@
                         </li>
                     </ul>
                 </section>
-            </div>
+            </footer>
         </div>
         <?php include($_SERVER['DOCUMENT_ROOT'] . "/courses/assets/include/scripts.html") ?>
     </body>
