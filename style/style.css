@@ -146,8 +146,6 @@ img, video {
 }
 
 body {
-    width: calc( 100% );
-    max-width: calc( 100vw - 1em );
     background-color: var(--bg-color);
     background-image: url(../images/az-subtle.png);
 }
@@ -247,11 +245,6 @@ p code {
     .large-img {
         width: 90%;
         margin: 0;
-    }
-
-    body {
-        width: 100%;
-        max-width: 100%;
     }
 
     nav .ls {

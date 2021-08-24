@@ -6,6 +6,7 @@
                 <h2 class="title">websites</h2>
                 <div class="content">
                     <ul class="word-list">
+                        <li>transfer.sh<br><a href="https://transfer.sh/">https://transfer.sh/</a></li>
                         <li>Radio Garden<br><a href="http://radio.garden/">http://radio.garden/</a></li>
                         <li>Electronic Frontier Foundation<br><a href="https://www.eff.org/">https://www.eff.org/</a></li>
                         <li>ASCII Art and ANSI Art<br><a href="http://www.roysac.com/default.html">http://www.roysac.com/default.html</a></li>
@@ -42,6 +43,15 @@
                     </ul>
                 </div>
             </section>
+            <section id="radio-stations">
+                <h2 class="title">radio stations</h2>
+                <div class="content">
+                    <ul class="word-list">
+                        <li>The Lot Radio<br><a href="https://www.thelotradio.com/">https://www.thelotradio.com/</a></li>
+                    </ul>
+                </div>
+            </section>
         </main>
-    </body>
+    </div>
+</body>
 </html>
