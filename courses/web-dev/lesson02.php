@@ -5,7 +5,7 @@
         <?php include($_SERVER['DOCUMENT_ROOT'] . "/courses/assets/include/courses-header.html") ?>
         <div id="body">
             <?php include($_SERVER['DOCUMENT_ROOT'] . "/courses/assets/include/courses-nav.html") ?>
-            <div id="main">
+            <main>
                 <section id="editors">
                     <h2 class="title">Text Editors</h2>
                     <div class="content">
@@ -92,7 +92,7 @@
                         </p>
                     </div>
                 </section>
-            </div>
+            </main>
             <div id="footer">
                 <section>
                     <ul id="lesson-nav">

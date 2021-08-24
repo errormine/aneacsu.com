@@ -7,13 +7,13 @@
     <?php include($_SERVER['DOCUMENT_ROOT'] . "/blog/include/blog-header.html") ?>
     <div id="body">
         <?php include($_SERVER['DOCUMENT_ROOT'] . "/blog/include/blog-nav.html") ?>
-        <div id="main">
+        <main>
             <section id="JOE">
                 <div class="content">
 
                 </div>
             </section>
-        </div>
+        </main>
     </div>
 </body>
 </html>

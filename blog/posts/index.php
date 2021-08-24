@@ -7,7 +7,7 @@
     <?php include("../include/blog-header.html") ?>
     <div id="body">
         <?php include("../include/blog-nav.html") ?>
-        <div id="main">
+        <main>
             <section id="posts">
                 <h2 class="title">
                     posts
@@ -18,7 +18,7 @@
                     </ul>
                 </div>
             </section>
-        </div>
+        </main>
     </div>
 </body>
 </html>

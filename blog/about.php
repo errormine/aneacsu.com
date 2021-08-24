@@ -7,7 +7,7 @@
     <?php include("include/blog-header.html") ?>
     <div id="body">
         <?php include("include/blog-nav.html") ?>
-        <div id="main">
+        <main>
             <section id="about">
                 <p>Somebody tell me.</p>
                 <p>Why does it feel more real when I dream than when I am awake?</p>
@@ -16,7 +16,7 @@
                 <p>There is some fiction in your truth, and some truth in your fiction.</p>
                 <p>To know the truth, you must risk everything.</p>
             </section>
-        </div>
+        </main>
     </div>
 </body>
 </html>

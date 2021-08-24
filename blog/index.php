@@ -7,9 +7,9 @@
     <?php include("include/blog-header.html") ?>
     <div id="body">
         <?php include("include/blog-nav.html") ?>
-        <div id="main">
+        <main>
             <?php include("include/get_posts.php") ?>
-        </div>
+        </main>
     </div>
     <script src="/js/jquery.js"></script>
     <script>

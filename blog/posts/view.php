@@ -28,7 +28,7 @@ $row = mysqli_fetch_assoc($result);
     <?php include("../include/blog-header.html") ?>
     <div id="body">
         <?php include("../include/blog-nav.html") ?>
-        <div id="main">
+        <main>
             <section id=<?php echo "'" . $row["title"] . "'"; ?>>
                 <h2 class="title">
                     <?php echo $row["title"]; ?>
@@ -45,7 +45,7 @@ $row = mysqli_fetch_assoc($result);
                     <?php echo $row["content"]; ?>
                 </div>
             </section>
-        </div>
+        </main>
     </div>
     <script src="/js/jquery.js"></script>
     <script>

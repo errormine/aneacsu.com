@@ -3,7 +3,7 @@
     <?php include("include/header.html")?>
     <div id="body">
         <?php include("include/nav.html")?>
-        <div id="main">
+        <main>
             <section id="about">
                 <h2 class="title">about</h2>
                 <div class="content">
@@ -49,7 +49,7 @@
                     </ul>
                 </div>
             </section>
-        </div>
+        </main>
     </div>
     <!--GET OUT OF HERE-->
 </body>

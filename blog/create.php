@@ -6,7 +6,7 @@
 <body>
     <?php include ("include/blog-header.html") ?>
     <div id="body">
-        <div id="main">
+        <main>
             <section id="new-post">
                 <h2 class="title">
                     create a post
@@ -31,7 +31,7 @@
                     </form>
                 </div>
             </section>
-        </div>
+        </main>
     </div>
 </body>
 </html>

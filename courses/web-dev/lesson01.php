@@ -5,7 +5,7 @@
         <?php include($_SERVER['DOCUMENT_ROOT'] . "/courses/assets/include/courses-header.html") ?>
         <div id="body">
             <?php include($_SERVER['DOCUMENT_ROOT'] . "/courses/assets/include/courses-nav.html") ?>
-            <div id="main">
+            <main>
                 <section id="intro">
                     <h2 class="title">HTML Introduction</h2>
                     <div class="content">
@@ -35,7 +35,7 @@
                         <pre><code data-include="/courses/web-dev/assets/lesson01/html/skeleton.html"></code></pre>
                     </div>
                 </section>
-            </div>
+            </main>
             <div id="footer">
                 <section>
                     <ul id="lesson-nav">
