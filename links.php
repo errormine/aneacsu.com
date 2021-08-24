@@ -52,6 +52,5 @@
                 </div>
             </section>
         </main>
-    </div>
-</body>
+    </body>
 </html>
