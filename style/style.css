@@ -38,21 +38,22 @@ header {
     padding: 2em 25%;
 }
 
-#footer {
-    margin-bottom: 2em;
-}
-
-.title {
-    font-size: 26px;
-    color: var(--title-color);
-}
-
 main {
     padding: 1em 25%;
 }
 
 main .title:before {
     content: "> "
+}
+
+footer {
+    margin-bottom: 2em;
+    padding: 0 25%;
+}
+
+.title {
+    font-size: 26px;
+    color: var(--title-color);
 }
 
 #lesson-nav li {
