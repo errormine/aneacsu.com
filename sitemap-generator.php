@@ -19,7 +19,7 @@
 	// Set true or false to define how the script is used.
 	// true:  As CLI script.
 	// false: As Website script.
-	define ('CLI', false);
+	define ('CLI', true);
 
 	// Define here the URLs to skip. All URLs that start with
 	// the defined URL will be skipped too.
