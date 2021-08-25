@@ -10,6 +10,7 @@
         <main>
             <?php include("include/get_posts.php") ?>
         </main>
+        <?php include($_SERVER['DOCUMENT_ROOT'] . "/include/footer.html") ?>
     </div>
     <script src="/js/jquery.js"></script>
     <script>

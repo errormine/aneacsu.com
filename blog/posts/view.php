@@ -46,6 +46,7 @@ $row = mysqli_fetch_assoc($result);
                 </div>
             </section>
         </main>
+        <?php include($_SERVER['DOCUMENT_ROOT'] . "/include/footer.html") ?>
     </div>
     <script src="/js/jquery.js"></script>
     <script>

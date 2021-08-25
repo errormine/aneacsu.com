@@ -94,7 +94,7 @@
                 </li>
             </ul>
         </main>
-        <footer></footer>
+        <?php include($_SERVER['DOCUMENT_ROOT'] . "/include/footer.html") ?>
         <?php include($_SERVER['DOCUMENT_ROOT'] . "/courses/assets/include/scripts.html") ?>
     </body>
 </html>

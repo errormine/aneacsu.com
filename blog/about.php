@@ -17,6 +17,7 @@
                 <p>To know the truth, you must risk everything.</p>
             </section>
         </main>
+        <?php include($_SERVER['DOCUMENT_ROOT'] . "/include/footer.html") ?>
     </div>
 </body>
 </html>
