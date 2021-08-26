@@ -37,10 +37,6 @@
                             <p>Full web dev course that teaches the basics of HTML / CSS and including some JavaScript. Contains lengthy lectures and 16 projects to complete and help you get a grasp on the fundamentals of web development.</p>
                         </li>-->
                         <li>
-                            <h2 class="content-h2"><a href="https://www.roblox.com/users/13627473/profile">Roblox Games</a></h2>
-                            <p>I tried learning how to make Roblox games and have a couple unfinished ones that can be found here.</p>
-                        </li>
-                        <li>
                             <h2 class="content-h2"><a href="https://github.com/prycaustic/bent-bot">bent-bot</a></h2>
                             <p>First time making a discord bot after taking a Java class in high school. (i don't think it works anymore)</p>
                         </li>
