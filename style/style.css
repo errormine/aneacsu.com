@@ -41,10 +41,6 @@ header {
 main {
     padding: 0 25%;
     padding-top: 1em;
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 main .title:before {

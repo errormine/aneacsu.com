@@ -35,6 +35,7 @@
                 <h2 class="title">videos</h2>
                 <div class="content">
                     <ul class="word-list">
+                        <li>How Roblox Is Exploiting Young Game Developers<br><a href="https://youtu.be/_gXlauRB1EQ">https://youtu.be/_gXlauRB1EQ</a></li>
                         <li>Humans Need Not Apply<br><a href="https://youtu.be/7Pq-S557XQU">https://youtu.be/7Pq-S557XQU</a></li>
                         <li>Best Free Alternatives to Adobe Creative Suite<br><a href="https://youtu.be/o0Bvr070N-k">https://youtu.be/o0Bvr070N-k</a></li>
                         <li>DYNAMO DREAM - Episode 1<br><a href="https://youtu.be/LsGZ_2RuJ2A">https://youtu.be/LsGZ_2RuJ2A</a></li>
