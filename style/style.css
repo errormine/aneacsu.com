@@ -1,64 +1,107 @@
 @font-face {
-  font-family: 'Fira Code';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/firacode/v10/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVD7Ng.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-family: 'Fira Code';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/firacode/v10/uU9eCBsR6Z2vfE9aq3bL0fxyUs4tcw4W_D1sJVD7Ng.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
-
+  
 @font-face {
-  font-family: 'Andada Pro';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(https://fonts.gstatic.com/s/andadapro/v1/HhyEU5Qi9-SuOEhPe4LtKoVCuWGURPcg3DPJBb8bHr0.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+    font-family: 'Andada Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/andadapro/v1/HhyEU5Qi9-SuOEhPe4LtKoVCuWGURPcg3DPJBb8bHr0.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 :root {
-    --bg-color: #2b2a33;
-    --section-color: #1c1b22;
-    --link-color: #ad8165;
-    --link-hover: #e0a581;
-    --title-color: #81ace0;
-    --subtitle-color: #929298;
-    --code-color: #85d8d0;
-
-    color: #fafcfb;
+    --main: #2b2a33;
+    --main-dark: #1c1b22bb;
+    --accent: #ad8165;
+    --accent-dark: #e0a581;
+    --accent2: #81ace0;
+    --accent2-dark: #929298;
+    --white: #ddd;
+    
+    color: var(--white);
     font-size: 18px;
     font-family: 'Fira Code', 'Lucida Console', monospace;
 }
 
+body {
+    width: 50%;
+    margin: 0 auto;
+    background: var(--main) url(../images/xv.png) fixed center;
+}
+
+/* HEADER */
 header {
-    background-color: var(--section-color);
-    background-image: url(../images/az-subtle.png);
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5); 
-    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
-    padding: 2em 25%;
+    background-color: var(--main-dark);
+    outline: 2px solid var(--accent2);
+    margin: 1em 0;
+    padding: 1.5em;
 }
 
-main {
-    padding: 0 25%;
-    padding-top: 1em;
+.title {
+    font-size: 24px;
+    color: var(--accent2);
 }
 
-main .title:before {
-    content: "> "
+.title a {
+    color: var(--accent2);
+    text-decoration: none;
 }
 
+.subtitle {
+    color: var(--accent2-dark);
+}
+
+header nav {
+    margin: 0 auto;
+}
+
+header nav li {
+    margin: 1em;
+    margin-bottom: 0;
+    display: inline-block;
+}
+
+header nav a {
+    color: var(--accent);
+}
+
+/* MAIN */
+main section {
+    background-color: var(--main-dark);
+    outline: 2px solid var(--accent2);
+    margin: 1em 0;
+    padding: 1.5em;
+}
+
+main li {
+    display: inline-block;
+    margin: 1em;
+    margin-bottom: 0;
+}
+
+main a {
+    color: var(--accent);
+}
+
+/* FOOTER */
 footer {
+    background-color: var(--main-dark);
+    outline: 2px solid var(--accent2);
+    margin: 1em 0;
+    padding: 1.5em;
     display: flex;
     justify-content: space-between;
-    padding: 2em 25%;
-    margin-top: 1em;
-    background-color: var(--section-color);
-    -webkit-box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5); 
-    box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.5);
 }
 
 footer div {
-    color: var(--subtitle-color);
+    color: var(--accent2-dark);
 }
 
 footer p {
@@ -67,171 +110,6 @@ footer p {
 }
 
 footer a {
-    color: var(--subtitle-color);
+    color: var(--accent2-dark);
     text-decoration: none;
-}
-
-.align-center {
-    text-align: center;
-}
-
-.align-right {
-    text-align: right;
-}
-
-.title {
-    font-size: 26px;
-    color: var(--title-color);
-}
-
-#lesson-nav li {
-    display: inline-block;
-}
-
-#lesson-nav .next {
-    position: relative;
-    float: right;
-}
-
-.title a {
-    text-decoration: none;
-    color: var(--title-color);
-}
-
-.title a:hover {
-    color: var(--title-color)
-}
-
-.subtitle {
-    padding: .5em 0 0 2em;
-    color: var(--subtitle-color);
-}
-
-.wd {
-    margin-right: 1em;
-}
-
-.ls {
-    margin: 0 1em;
-    margin-top: 1em;
-}
-
-.word-list li:before {
-    content: "# ";
-}
-
-.content-h2 {
-    color: var(--title-color);
-    font-size: 20px;
-    margin: 1em 0;
-}
-
-.content {
-    margin: 1em 0;
-}
-
-.content p {
-    font-family: 'Andada Pro', Georgia, 'Times New Roman', Times, serif;
-    width: 90%;
-    padding: 0.5em 5%;
-    display: inline-block;
-}
-
-.link-list li {
-    display: inline;
-    margin-right: 1em;
-}
-
-.link-list p {
-    font-family: 'Fira Code', 'Lucida Console', monospace;
-    padding: 0.25em 3%;
-}
-
-body {
-    background-color: var(--bg-color);
-    background-image: url(../images/az-subtle.png);
-}
-
-section {
-    padding-top: 1em;
-}
-
-nav {
-    margin-top: 2em;
-}
-
-nav li {
-    display: inline;
-}
-
-li {
-    padding: .5em 0;
-}
-
-a {
-    color: var(--link-color);
-}
-
-a:hover {
-    color: var(--link-hover)
-}
-
-em {
-    font-style: italic;
-}
-
-p {
-    line-height: 150%;
-}
-
-pre {
-    font-size: 90%;
-    color: #EEEEEE;
-    padding: 1em;
-    margin: 1em 0;
-	overflow: auto;
-	border-radius: 0.3em;
-    background: var(--section-color);
-    line-height: 1.5;
-}
-
-code {
-    color: var(--code-color);
-    font-family: monospace;
-    background-color: var(--section-color);
-}
-
-p code {
-    margin: 0 .2em;
-}
-
-@media only screen and (max-width: 960px) {
-    header {
-        padding: 2em 5%;
-    }
-
-    main {
-        padding: 1em 5%;
-    }
-
-    footer {
-        padding: 1em 0;
-        display: block;
-    }
-
-    footer div,
-    footer .align-center,
-    footer .align-right {
-        margin: 1em 0;
-        text-align: center;
-    }
-
-    .link-list li {
-        display: block;
-        margin-right: 1em;
-    }
-
-    nav .ls {
-        display: block;
-    }
 }
