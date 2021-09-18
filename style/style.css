@@ -39,7 +39,7 @@ header {
     background-color: var(--main-dark);
     outline: 2px solid var(--accent);
     margin-top: 1em;
-    padding: 1em;
+    padding: 1em 1.5em;
 }
 
 header .title {
@@ -54,6 +54,10 @@ header .title {
 
 .subtitle {
     color: var(--accent-dark);
+}
+
+header nav {
+    margin-top: 1em;
 }
 
 header nav li {

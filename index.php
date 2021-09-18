@@ -27,10 +27,12 @@
                         <li>
                             <h2 class="content-h2"><a href="https://github.com/prycaustic/aneacsu.com">This Website</a></h2>
                             <p>This is a link to the github repo for this website.</p>
+                            <br>
                         </li>
                         <li>
                             <h2 class="content-h2"><a href="https://github.com/prycaustic/b1pod">b1pod</a></h2>
                             <p>Another Discord bot with some random commands. You can invite it to your server and I will try my best to keep it working for the time being.</p>
+                            <br>
                         </li>
                         <!--<li>
                             <h2 class="content-h2"><a href="/courses/web-dev/">Web Development Course</a></h2>
@@ -39,6 +41,7 @@
                         <li>
                             <h2 class="content-h2"><a href="https://github.com/prycaustic/bent-bot">bent-bot</a></h2>
                             <p>First time making a discord bot after taking a Java class in high school. (i don't think it works anymore)</p>
+                            <br>
                         </li>
                         <li>
                             <h2 class="content-h2"><a href="https://prycaustic.github.io/todolist/">todolist</a></h2>
