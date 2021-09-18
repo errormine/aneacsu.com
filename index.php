@@ -29,27 +29,23 @@
                 <div class="content">
                     <ul class="link-list">
                         <li>
-                            <h2 class="content-h2"><a href="https://github.com/prycaustic/aneacsu.com">This Website</a></h2>
-                            <p>This is a link to the github repo for this website.</p>
+                            <h2 class="content-h2"><a href="https://github.com/prycaustic/aneacsu.com">aneacsu.com</a></h2>
+                            <p>Github repo for this site, self hosted on a Raspberry Pi.</p>
                             <br>
                         </li>
                         <li>
                             <h2 class="content-h2"><a href="https://github.com/prycaustic/b1pod">b1pod</a></h2>
-                            <p>Another Discord bot with some random commands. You can invite it to your server and I will try my best to keep it working for the time being.</p>
+                            <p>Another Discord bot with some goofy stuff.</p>
                             <br>
                         </li>
-                        <!--<li>
-                            <h2 class="content-h2"><a href="/courses/web-dev/">Web Development Course</a></h2>
-                            <p>Full web dev course that teaches the basics of HTML / CSS and including some JavaScript. Contains lengthy lectures and 16 projects to complete and help you get a grasp on the fundamentals of web development.</p>
-                        </li>-->
                         <li>
                             <h2 class="content-h2"><a href="https://github.com/prycaustic/bent-bot">bent-bot</a></h2>
-                            <p>First time making a discord bot after taking a Java class in high school. (i don't think it works anymore)</p>
+                            <p>First time messing around with Discord bots.</p>
                             <br>
                         </li>
                         <li>
                             <h2 class="content-h2"><a href="https://prycaustic.github.io/todolist/">todolist</a></h2>
-                            <p>I was bored in film class so I made a website for my to-do lists and this was the result. It sucks pretty bad cause I had never used JavaScript before.</p>
+                            <p>Wanted to learn JavaScript so I made this. Then I realized I hate JavaScript.</p>
                         </li>
                     </ul>
                 </div>
