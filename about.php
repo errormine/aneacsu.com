@@ -3,8 +3,7 @@
         <?php include("include/header.html")?>
         <main>
             <section id="websites">
-                
-                <h2 class="title">about</h2>
+                <h2 class="title"></h2>
                 <div class="content mono">
                     <p>Somebody tell me.</p>
                     <p>Why it feels more real when I dream than when I am awake?</p>

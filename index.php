@@ -5,7 +5,12 @@
             <section id="about">
                 <h2 class="title">about</h2>
                 <div class="content">
-                    infosec / idk what i'm doing
+                    <a href="/images/breakfast_club03.gif">
+                        <img src="/images/thumbs/thumb_breakfast_club04.gif" alt="<3" height="128px">
+                    </a>
+                    <br>
+                    <br>
+                    <p>infosec / idk what i'm doing</p>
                 </div>
             </section>
             <section id="social">

@@ -32,16 +32,31 @@
 body {
     width: 50%;
     margin: 0 auto;
-    background: var(--main) url(../images/xv.png) fixed center;
+    background: var(--main) url(../images/xv.png) fixed;
 }
 
 a {
     color: var(--accent2);
 }
 
+img {
+    outline: 2px solid var(-accent);
+}
+
 .mono {
     font-family: monospace;
     font-weight: bold;
+}
+
+input[type=button] {
+    font-family: 'Fira Code', 'Lucida Console', monospace;
+    font-size: 18px;
+    background-color: var(--accent);
+    border: none;
+    color: var(--main-dark);
+    padding: 1em;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* HEADER */
