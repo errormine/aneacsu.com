@@ -24,14 +24,25 @@
     font-family: 'Fira Code', 'Lucida Console', monospace;
 }
 
+::selection {
+    color: var(--accent2);
+    background-color: var(--accent);
+}
+
 body {
     width: 50%;
     margin: 0 auto;
     background: var(--main) url(../images/xv.png) fixed center;
+    overflow-y: scroll;
 }
 
 a {
     color: var(--accent2);
+}
+
+.mono {
+    font-family: monospace;
+    font-weight: bold;
 }
 
 /* HEADER */
@@ -79,7 +90,7 @@ main section .title {
 }
 
 main .word-list li {
-    margin-bottom: 1em;
+    padding: 0.5em 0;
     display: block;
 }
 
@@ -117,4 +128,15 @@ footer div {
 footer p {
     font-size: 16px;
     display: inline;
+}
+
+/* ABOUT PAGE ANIMATION */
+.terminal {
+    animation: blink 1s infinite step-end;
+}
+
+@keyframes blink {
+    from, to { opacity: 0; }
+    
+    50% {opacity: 1;}
 }
