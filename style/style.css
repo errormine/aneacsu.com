@@ -1,3 +1,5 @@
+@import url('../style/scandinavian.css');
+
 @font-face {
     font-family: 'Fira Code';
     font-style: normal;
@@ -17,15 +19,7 @@
 }
 
 :root {
-    --main: #2b2a33;
-    --main-dark: #1c1b22bb;
-    --accent: #ad8165;
-    --accent-dark: #e0a581;
-    --accent2: #81ace0;
-    --accent2-dark: #929298;
-    --white: #ddd;
-    
-    color: var(--white);
+    color: var(--accent);
     font-size: 18px;
     font-family: 'Fira Code', 'Lucida Console', monospace;
 }
@@ -36,64 +30,76 @@ body {
     background: var(--main) url(../images/xv.png) fixed center;
 }
 
+a {
+    color: var(--accent2);
+}
+
 /* HEADER */
 header {
     background-color: var(--main-dark);
-    outline: 2px solid var(--accent2);
-    margin: 1em 0;
-    padding: 1.5em;
+    outline: 2px solid var(--accent);
+    margin-top: 1em;
+    padding: 1em;
 }
 
-.title {
-    font-size: 24px;
-    color: var(--accent2);
+header .title {
+    font-size: 32px;
+    color: var(--accent);
 }
 
 .title a {
-    color: var(--accent2);
+    color: var(--accent);
     text-decoration: none;
 }
 
 .subtitle {
-    color: var(--accent2-dark);
-}
-
-header nav {
-    margin: 0 auto;
+    color: var(--accent-dark);
 }
 
 header nav li {
-    margin: 1em;
-    margin-bottom: 0;
+    margin-right: 1em;
     display: inline-block;
-}
-
-header nav a {
-    color: var(--accent);
 }
 
 /* MAIN */
 main section {
     background-color: var(--main-dark);
-    outline: 2px solid var(--accent2);
+    outline: 2px solid var(--accent);
     margin: 1em 0;
-    padding: 1.5em;
+}
+
+main section .title {
+    color: var(--main-dark);
+    background-color: var(--accent);
+    padding: 0.5em;
+}
+
+main .word-list li {
+    margin-bottom: 1em;
+    display: block;
 }
 
 main li {
     display: inline-block;
-    margin: 1em;
-    margin-bottom: 0;
+    margin-right: 1em;
 }
 
-main a {
-    color: var(--accent);
+main .title::before {
+    content: "> ";
+}
+
+main .content-h2 {
+    margin-bottom: 1em;
+}
+
+main .content {
+    padding: 1em 1.5em;
 }
 
 /* FOOTER */
 footer {
     background-color: var(--main-dark);
-    outline: 2px solid var(--accent2);
+    outline: 2px solid var(--accent);
     margin: 1em 0;
     padding: 1.5em;
     display: flex;
@@ -101,15 +107,10 @@ footer {
 }
 
 footer div {
-    color: var(--accent2-dark);
+    color: var(--accent-dark);
 }
 
 footer p {
     font-size: 16px;
     display: inline;
-}
-
-footer a {
-    color: var(--accent2-dark);
-    text-decoration: none;
 }
