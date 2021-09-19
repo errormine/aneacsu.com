@@ -6,9 +6,9 @@ if ($conn->error)
     die("Connection failed: " . $conn->$error);
 }
 
-$name =  $_POST["name"];
-$comment = $_POST["comment"];
-$sql = "INSERT INTO Guestbook VALUES (NULL, '" . $name . "', '" . $comment . "', DEFAULT)";
+$name =  filter_var($_POST["name"], FILTER_SANITIZE_STRING);
+$comment = filter_var($_POST["comment"], FILTER_SANITIZE_STRING);
+$sql = "INSERT INTO Guestbook VALUES (NULL, '$name', '$comment', DEFAULT)";
 
 if ($conn->query($sql) === TRUE)
 {
