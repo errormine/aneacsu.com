@@ -48,7 +48,8 @@ img {
     font-weight: bold;
 }
 
-input[type=button] {
+input[type=button],
+input[type=submit] {
     font-family: 'Fira Code', 'Lucida Console', monospace;
     font-size: 18px;
     background-color: var(--accent);
@@ -57,6 +58,10 @@ input[type=button] {
     padding: 1em;
     text-decoration: none;
     cursor: pointer;
+}
+
+.align-right {
+    text-align: right;
 }
 
 /* HEADER */
@@ -155,6 +160,49 @@ footer p {
     50% {opacity: 1;}
 }
 
+/* FORMS */
+::placeholder {
+    color: var(--accent);
+}
+
+form ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+form .flex-big {
+    flex-basis: 50%;
+}
+
+form input[type=text] {
+    padding: 0.5em;
+    background-color: var(--main-dark);
+    border: 2px solid var(--accent);
+    color: var(--accent2);
+    font-size: 16px;
+    width: 95%;
+}
+
+form input[type=text]:focus {
+    outline: none;
+}
+
+form input[type=submit] {
+    font-size: 16px;
+    padding: 0.5em;
+}
+
+/* GUESTBOOK */
+#guestbook table {
+    width: 100%;
+}
+
+#guestbook td {
+    padding: 0.5em 0;
+    word-break: break-word;
+}
+
 /* MOBILE STUFF */
 @media only screen and (max-width: 960px) {
     body {
@@ -180,5 +228,9 @@ footer p {
     nav .ls {
         margin: 1em 0;
         display: block;
+    }
+
+    .mobile-hidden {
+        display: none;
     }
 }

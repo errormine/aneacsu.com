@@ -31,6 +31,14 @@
                     </ul>
                 </div>
             </section>
+            <section id="courses">
+                <h2 class="title">courses</h2>
+                <div class="content">
+                    <ul class="word-list">
+                        <li><a href="https://java-programming.mooc.fi/">Java Programming</a></li>
+                    </ul>
+                </div>
+            </section>
             <section id="videos">
                 <h2 class="title">videos</h2>
                 <div class="content">
