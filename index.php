@@ -5,7 +5,7 @@
             <section id="about">
                 <h2 class="title">about</h2>
                 <div class="content">
-                    <video autoplay loop muted playsinline width="50%">
+                    <video class="medium-img" autoplay loop muted playsinline>
                         <source src="/images/breakfast_club04.mp4" type="video/mp4">
                     </video>
                     <br>

@@ -64,6 +64,10 @@ input[type=submit] {
     text-align: right;
 }
 
+.medium-img {
+    width: 50%;
+}
+
 /* HEADER */
 header {
     background-color: var(--main-dark);
@@ -203,6 +207,12 @@ form input[type=submit] {
     word-break: break-word;
 }
 
+/* BOOKS WIDGET */
+#books iframe {
+    width: 165px;
+    height: 400px;
+}
+
 /* MOBILE STUFF */
 @media only screen and (max-width: 960px) {
     body {
@@ -232,5 +242,9 @@ form input[type=submit] {
 
     .mobile-hidden {
         display: none;
+    }
+
+    .medium-img {
+        width: 100%;
     }
 }
