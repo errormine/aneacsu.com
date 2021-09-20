@@ -43,10 +43,10 @@
                     <form method="POST" action="/post">
                         <ul>
                             <li>
-                                <input type="text" name="name" placeholder="Name" maxlength="12">
+                                <input type="text" name="name" placeholder="Name" maxlength="12" required>
                             </li>
                             <li class="flex-big">
-                                <input type="text" name="comment" placeholder="Comment" maxlength="32">
+                                <input type="text" name="comment" placeholder="Comment" maxlength="32" required>
                             </li>
                             <li>
                                 <input type="submit" value="Submit">
