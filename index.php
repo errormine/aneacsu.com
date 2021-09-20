@@ -5,9 +5,9 @@
             <section id="about">
                 <h2 class="title">about</h2>
                 <div class="content">
-                    <a href="/images/breakfast_club03.gif">
-                        <img src="/images/thumbs/thumb_breakfast_club04.gif" alt="<3" height="128px">
-                    </a>
+                    <video autoplay loop muted playsinline width="50%">
+                        <source src="/images/breakfast_club04.mp4" type="video/mp4">
+                    </video>
                     <br>
                     <br>
                     <p>infosec / idk what i'm doing</p>
