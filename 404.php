@@ -4,8 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <link rel="shortcut icon" href="/favicon.png">
-        <link rel="stylesheet" href="/style/reset.css">
-        <link rel="stylesheet" href="/style/style.css">
+        <?php include($_SERVER['DOCUMENT_ROOT'] . "/css_import.php") ?>
         <title>404 Not Found</title>
         <style>
             html {
