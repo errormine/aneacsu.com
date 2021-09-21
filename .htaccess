@@ -1,3 +1,7 @@
+# Autoversion CSS files
+RewriteRule ^(.*)\.[\d]{10}\.(css|js)$ $1.$2 [L]
+
+# Hide PHP in URL
 RewriteEngine on
 
 # Rewrite /foo/bar to /foo/bar.php
@@ -7,4 +11,5 @@ RewriteRule ^([^.?]+)$ %{REQUEST_URI}.php [L]
 RewriteCond %{THE_REQUEST} "^[^ ]* .*?\.php[? ].*$"
 RewriteRule .* - [L,R=404]
 
+# Custom 404 Page
 ErrorDocument 404 /404
