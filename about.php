@@ -6,7 +6,7 @@
                 <h2 class="title"></h2>
                 <div class="content mono">
                     <p>Somebody tell me.</p>
-                    <p>Why it feels more real when I dream than when I am awake?</p>
+                    <p>Why does it feel more real when I dream than when I am awake?</p>
                     <p>How can I know if my senses are lying?</p>
                     <br>
                     <p>There is some fiction in your truth,</p>
