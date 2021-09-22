@@ -6,7 +6,7 @@
                 <h2 class="title">about</h2>
                 <div class="content">
                     <video class="medium-img" autoplay loop muted playsinline>
-                        <source src="/images/breakfast_club04.mp4" type="video/mp4">
+                        <source src="/videos/breakfast_club04.mp4" type="video/mp4">
                     </video>
                     <br>
                     <br>

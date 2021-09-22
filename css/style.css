@@ -205,12 +205,6 @@ form input[type=submit] {
     word-break: break-word;
 }
 
-/* BOOKS WIDGET */
-#books iframe {
-    width: 165px;
-    height: 400px;
-}
-
 /* MOBILE STUFF */
 @media only screen and (max-width: 960px) {
     body {
