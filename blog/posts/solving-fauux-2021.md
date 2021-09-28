@@ -1,26 +1,38 @@
-# Solving the fauux 2021 ARG
-<div class="content" markdown="1">
-I was surfing through random websites when I came across one particular neocities page created by the user fauux. 
-Entitled [Wired Sound For Wired People](https://fauux.neocities.org/) (flash warning), it's full of weird internet stuff, and more specifically this ARG which I will just be calling 
-2021.html pt.2
+# 08/25/2021 Solving the fauux 2021 ARG
 
-### So Far
+<div class="content" markdown="1">
+
+I was surfing through random websites when I came across one particular neocities page created by the user fauux. 
+Entitled [Wired Sound For Wired People](https://fauux.neocities.org/) (flash warning), it's full of weird internet stuff, and more specifically this ARG which I will just be calling 2021.html pt.2
+
+## So Far
 
 Immediately when you get to the 2021 ARG you can see some funny stuff. A couple gifs and a link [2021.html](https://fauux.neocities.org/2021.html) which brings you to a fairly 
 inconspicuous page that seems unfinished. Upon closer inspection you find a few interesting things.
-- The first link sends you to a file called [glOOOOfD.mov](https://fauux.neocities.org/glOOOOfD.mov)
-- There is a gif in between the links [yJbJK-f2.gif](https://fauux.neocities.org/ylk/yJbJK-f2.gif)
-- The second link is a pdf file called [yyyyyyY.pdf](https://fauux.neocities.org/yyyyyyY.pdf)
-- Inspecting the source code you find some commented lines in the head with a link to an audio file [iIIiiiIIIIiiiiIIIIii.wav](https://fauux.neocities.org/iIIiiiIIIIiiiiIIIIii.wav)
-- As well as a funny looking string of characters `+PhVT/ekuoTp5BlA6tgSdassok/PhFChK7et28DsnkA7K0a6GYjaK2KAqNBVMLq9`
+
+The first link sends you to a file called [glOOOOfD.mov](https://fauux.neocities.org/glOOOOfD.mov)
+
+There is a gif in between the links [yJbJK-f2.gif](https://fauux.neocities.org/ylk/yJbJK-f2.gif)
+
+The second link is a pdf file called [yyyyyyY.pdf](https://fauux.neocities.org/yyyyyyY.pdf)
+
+Inspecting the source code you find some commented lines in the head with a link to an audio file [iIIiiiIIIIiiiiIIIIii.wav]
+
+(https://fauux.neocities.org/iIIiiiIIIIiiiiIIIIii.wav)
+
+As well as a funny looking string of characters `+PhVT/ekuoTp5BlA6tgSdassok/PhFChK7et28DsnkA7K0a6GYjaK2KAqNBVMLq9`
 
 The original post has some images that include:
-- What appears to be just decoration [JJJjjjjdDDD.gif](https://fauux.neocities.org/JJJjjjjdDDD.gif)
-- An image of someone [whoid.gif](https://fauux.neocities.org/whoid.gif)
-- Also some files titled [Red](https://fauux.neocities.org/red.mov), [Green](https://fauux.neocities.org/green.mov), [Blue](https://fauux.neocities.org/blue.mov)
-- As well as a hidden image [kin555.gif](https://fauux.neocities.org/kin555.gif)
 
-### glOOOOfD.mov
+What appears to be just decoration [JJJjjjjdDDD.gif](https://fauux.neocities.org/JJJjjjjdDDD.gif)
+
+An image of someone [whoid.gif](https://fauux.neocities.org/whoid.gif)
+
+Also some files titled [Red](https://fauux.neocities.org/red.mov), [Green](https://fauux.neocities.org/green.mov), [Blue](https://fauux.neocities.org/blue.mov)
+
+As well as a hidden image [kin555.gif](https://fauux.neocities.org/kin555.gif)
+
+## glOOOOfD.mov
 This video is just a bunch of lines, and seems to be some random stuff at first. However, after extracting each frame and layering them on top of each other we find this image:
 
 ![g10000fD.mov](/public/images/g10000fD.bmp)
@@ -30,10 +42,10 @@ Kind of reminds me of one of the gifs from before:
 
 ![whoid.gif](https://fauux.neocities.org/whoid.gif)
 
-### yyyyyyY.pdf
+## yyyyyyY.pdf
 This file is a mystery so far. I have not been able to find anything useful from it. Let me know if you do.
 
-### Red, Green, Blue
+## Red, Green, Blue
 These three videos also seem to just be random flashing lights as well, but when you extract each frame once again and tile them together you find some images.
 They seem to be RGB channels from a single image, and when we stack them on top of each other we end up with this:
 
@@ -49,7 +61,8 @@ Take note there are some characters in the top right:
 
 I wonder what this might mean.
 
-### iIIiiiIIIIiiiiIIIIii.wav
+## iIIiiiIIIIiiiiIIIIii.wav
+<br>
 <audio controls>
   <source src="https://fauux.neocities.org/iIIiiiIIIIiiiiIIIIii.wav">
   Your browser does not support this audio.
@@ -58,7 +71,7 @@ I wonder what this might mean.
 Playing this file we hear that it's some morse code. Translating it to text we get the characters `6234523746396D466F614D` which don't seem to mean anything on their own.
 They are actually hex and converting them to ASCII gives us some more random characters `b4R7F9mFoaM`.
 
-### b4R7F9mFoaM
+## b4R7F9mFoaM
 If you're paying attention you'll have noticed that the characters from the planet pictures are similar to the ones from the morse code audio file.
 Turns out it's the id for a youtube video:
 
@@ -82,7 +95,7 @@ Sounds like nonsense, but this is where it gets wild. Taking the first letters o
 
 Looks like another youtube video to me and sure enough it is.
 
-### wCVArD4Pr6k
+## wCVArD4Pr6k
 Following the previous link we find this video:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wCVArD4Pr6k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -111,7 +124,7 @@ Now the same trick from before doesn't work here. I've tried searching for any h
 The comment seems to mention `PWD = sTTL` but searching for sTTL on Google only results in a Wikipedia page about 
 [Sit tibi terra levis](https://en.wikipedia.org/wiki/Sit_tibi_terra_levis). Seems cyptic, but I haven't found any use for this yet.
 
-### The Encrypted Strings
+## The Encrypted Strings
 I've managed to find two strings that seem to be encrypted with something. Possibly AES256, but I haven't managed to find the secret for either of them. They are:
 
 `+PhVT/ekuoTp5BlA6tgSdassok/PhFChK7et28DsnkA7K0a6GYjaK2KAqNBVMLq9`
@@ -122,5 +135,4 @@ I've managed to find two strings that seem to be encrypted with something. Possi
 
 ![kin555.gif](https://fauux.neocities.org/kin555.gif)
 
-Originally written on: 08/25/2021
 </div>

@@ -34,10 +34,8 @@ Numbered list:
   2. rinse
   3. repeat
 
-Link [example](https://www.usertrack.net).
-
 ### Image:
-![Image](https://www.usertrack.net/img/usertrack_logo.svg "icon")
+[![Image](/images/eye-transparent.gif "icon")](/heal)
 
 > Markdown uses email-style > characters for blockquoting.
 Inline <sup title="Hypertext Markup Language">HTML</sup> is supported.

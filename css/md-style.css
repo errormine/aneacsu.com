@@ -1,32 +1,36 @@
 @charset "utf-8";
 
-/**
- * markdown.css
- *
- * This program is free software: you can redistribute it and/or modify it under
- * the terms of the GNU Lesser General Public License as published by the Free
- * Software Foundation, either version 3 of the License, or (at your option) any
- * later version.
- *
- * This program is distributed in the hope that it will be useful, but WITHOUT
- * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
- * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
- * details.
- *
- * You should have received a copy of the GNU Lesser General Public License
- * along with this program. If not, see http://gnu.org/licenses/lgpl.txt.
- *
- * @project      Weblog and Open Source Projects of Florian Wolters
- * @version      GIT: $Id$
- * @package      xhtml-css
- * @author       Florian Wolters <florian.wolters.85@googlemail.com>
- * @copyright    2012 Florian Wolters
- * @cssdoc       version 1.0-pre
- * @license      http://gnu.org/licenses/lgpl.txt GNU Lesser General Public License
- * @link         http://github.com/FlorianWolters/jekyll-bootstrap-theme
- * @media        all
- * @valid        true
- */
+:root {
+    --dark: #1f2220;
+}
+
+.blog h2:before, h3:before,
+h4:before, h5:before,
+h6:before {
+    content: "# ";
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+h6 {
+    color: #777777;
+    background-color: inherit;
+    font-size: 14px;
+}
 
 img {
 	max-width: 100%;
@@ -46,18 +50,15 @@ tr:nth-child(even) {
 	background-color: #F8F8F8;
 }
 
-hr {
-    height: 0.2em;
-    border: 0;
-}
-
 p, blockquote, table, pre {
     margin: 15px 0;
 }
 
 code, pre {
+    font-family: monospace;
     border-radius: 3px;
     color: inherit;
+    background-color: var(--dark);
 }
 
 code {

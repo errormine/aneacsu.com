@@ -1,4 +1,4 @@
-# Creating a Blog With PHP and Markdown
+# 09/27/2021 Creating a Blog With PHP and Markdown
 
 <div class="content" markdown="1">
 
@@ -21,7 +21,5 @@ I modified the source code slightly to fit my website, and now I believe that I'
 I will probably add a couple more features that I would like to have for a little more ease of use, but for now it works pretty great and I defintely recommend taking a look at this solution if you would like a really simple static blog and you've already got a web server.
 
 Anyway thanks for reading and have a wonderful day!
-
-Written on: 09/27/2021
 
 </div>
