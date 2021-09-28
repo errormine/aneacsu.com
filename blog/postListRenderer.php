@@ -3,11 +3,12 @@
 
     $posts = getPostsList();
     foreach ($posts as $post) {
-        $titleAndSummary = getFirstLines($post['markdown'], 3);
-        $titleAndSummary = addTitleHref($titleAndSummary, $post['slug']);
+        $titleAndSummary = getFirstLines($post['markdown'], 5);
 ?>
-    <section class="blog-post">
+    <section class="markdown">
         <?php echo renderMarkdown($titleAndSummary); ?>
-        <a href="<?php echo $post['slug'] ?>">Read post</a>
+        <div class="post-footer">
+            <a class="read-post" href="<?php echo $post['slug']; ?>">Read More</a>
+        </div>
     </section>
 <?php }?>

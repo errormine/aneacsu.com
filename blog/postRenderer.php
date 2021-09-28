@@ -30,8 +30,8 @@
     }
 
     function getFirstLines($string, $count, $skip = 0) {
-        $lines = array_slice(explode(PHP_EOL, $string), $skip, $count);
-        return implode(PHP_EOL, $lines);
+        $lines = array_slice(explode("\n", $string), $skip, $count);
+        return implode("\n", $lines);
     }
 
     function getExternalURL($slug) {
@@ -56,6 +56,10 @@
                 'create_date' => filectime($filePath)
             );
         }
+
+        usort($posts_list, function($a, $b) {
+            return $a['create_date'] + $b['create_date'];
+        });
 
         return $posts_list;
     }
