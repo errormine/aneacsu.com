@@ -30,6 +30,9 @@ $blog = true;
     <main class="blog">
         <section class='markdown'>
                 <?php echo renderMarkdown($markdown); ?>
+                <div class="post-footer">
+                    <a   a href="/blog">Back to Posts</a>
+                </div>
         </section>
     </main>
     <?php include($_SERVER['DOCUMENT_ROOT'] . "/include/footer.html") ?>
