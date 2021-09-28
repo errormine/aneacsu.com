@@ -205,6 +205,30 @@ form input[type=submit] {
     word-break: break-word;
 }
 
+/* BLOG */
+.blog .markdown {
+    line-height: 1.5em;
+}
+
+.blog .markdown h1 {
+    color: var(--main-dark);
+    background-color: var(--accent);
+    padding: 0.5em;
+}
+
+.blog .markdown h1 a {
+    color: var(--main-dark);
+}
+
+.blog .markdown h1::before {
+    content: "> ";
+}
+
+.blog .markdown .post-footer {
+    padding: 1.5em;
+    padding-top: 0;
+}
+
 /* MOBILE STUFF */
 @media only screen and (max-width: 960px) {
     body {

@@ -18,11 +18,16 @@ function auto_version($file) {
     return preg_replace('{\\.([^./]+)$}', ".$mtime.\$1", $file);
 }
 
-const CSS = array(
+$css_list = array(
     '/css/reset.css',
 	'/css/style.css',
 	'/css/scandinavian.css',
 );
 
-foreach (CSS as $css)	
-  echo '<link rel="stylesheet" href="' . auto_version($css) . '" type="text/css">';
+if (isset($blog)) {
+    array_splice($css_list, 1, 0, '/css/md-style.css');
+}
+
+foreach ($css_list as $css) {
+    echo '<link rel="stylesheet" href="' . auto_version($css) . '" type="text/css">';
+}
