@@ -1,5 +1,7 @@
 # Markdown example post
 
+<div class="content" markdown="1">
+
 This is just an example blog post.
 
 ## Sub-heading
@@ -39,3 +41,5 @@ Link [example](https://www.usertrack.net).
 
 > Markdown uses email-style > characters for blockquoting.
 Inline <sup title="Hypertext Markup Language">HTML</sup> is supported.
+
+</div>
