@@ -1,7 +1,16 @@
-<?php include("include/head.php");?>
+<?php 
+$description = "This page is a big list of different links to content that I find interesting or useful. I update it every once in a while and the newest links will be at the top of each section.";
+include "include/head.php";
+?>
     <body> 
         <?php include("include/header.html")?>
         <main>
+            <section id="description">
+                <h2 class="title">links</h2>
+                <div class="content">
+                    <p><?php echo $description ?></p>
+                </div>
+            </section>
             <section id="websites">
                 <h2 class="title">websites</h2>
                 <div class="content">
@@ -58,7 +67,6 @@
                         <li><a href="https://1mb.club/">1MB Club</a></li>
                         <li><a href="https://overthewire.org/wargames/">OverTheWire: Wargames</a></li>
                         <li><a href="https://spyware.neocities.org/articles/index.html">spyware watchdog</a></li>
-                        <li><a href="https://1kfa.com/table/"></a></li>
                         <li><a href="http://theoldnet.com/">The Old Internet</a></li>
                         <li><a href="http://keygenmusic.org/">KeyGen Music</a></li>
                         <li><a href="https://observatory.mozilla.org/">Mozilla Observatory</a></li>

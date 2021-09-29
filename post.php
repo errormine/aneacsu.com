@@ -1,26 +1,31 @@
 <?php
-$conn = new mysqli("localhost", "anon", "anon", "aneacsu.com");
-$result = "Error: Something has gone wrong. You may have typed an illegal character.<br><br>Redirecting in 5 seconds.";
+try {
+    mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
+    $conn = new mysqli("localhost", "anon", "anon", "aneacsu.com");
+    $result = "Error: Something has gone wrong. You may have typed an illegal character.<br><br>Redirecting in 5 seconds.";
 
-if ($conn->error)
-{
-    die("Connection failed: " . $conn->$error);
-}
-
-if (isset($_POST["name"]) && isset($_POST["comment"]))
-{
-    $name =  filter_var($_POST["name"], FILTER_SANITIZE_STRING);
-    $comment = filter_var($_POST["comment"], FILTER_SANITIZE_STRING);
-
-    $sql = "INSERT INTO Guestbook VALUES (NULL, '$name', '$comment', DEFAULT)";
-
-    if ($conn->query($sql) === TRUE)
+    if ($conn->error)
     {
-        $result = "Thank you for signing.";
+        die("Connection failed: " . $conn->$error);
     }
-}
 
-$conn->close();
+    if (isset($_POST["name"]) && isset($_POST["comment"]))
+    {
+        $name =  filter_var($_POST["name"], FILTER_SANITIZE_STRING);
+        $comment = filter_var($_POST["comment"], FILTER_SANITIZE_STRING);
+
+        $sql = "INSERT INTO Guestbook VALUES (NULL, '$name', '$comment', DEFAULT)";
+
+        if ($conn->query($sql) === TRUE)
+        {
+            $result = "Thank you for signing.";
+        }
+    }
+
+    $conn->close();
+} catch (Exception $e) {
+    $result = "Post failed.";
+}
 header("Refresh: 5; URL=guestbook");
 ?>
 <!DOCTYPE html>

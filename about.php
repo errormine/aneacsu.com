@@ -1,9 +1,12 @@
-<?php include("include/head.php")?>
+<?php 
+$description = "Somebody tell me. Why does it feel more real when I dream than when I am awake?";
+include("include/head.php")
+?>
     <body> 
         <?php include("include/header.html")?>
         <main>
-            <section id="websites">
-                <h2 class="title"></h2>
+            <section id="about">
+                <h2 class="title mono">[coppertop@localhost ~]$ </h2>
                 <div class="content mono">
                     <p>Somebody tell me.</p>
                     <p>Why does it feel more real when I dream than when I am awake?</p>
