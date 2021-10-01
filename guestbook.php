@@ -31,11 +31,16 @@ include("include/head.php")
                                 {
                                     while ($row = $result->fetch_assoc())
                                     {
-                                        echo "<tr>";
-                                        echo "<td class='left'>" . $row["Name"] . "</td>";
-                                        echo "<td class='middle'>" . $row["Comment"] . "<td>";
-                                        echo "<td class='align-right mobile-hidden right'>" . $row["Date"] . "</td>";
-                                        echo "</tr>";
+                                        echo '<tr>';
+                                        echo '<td class="left">'; 
+                                        if (isset($row['Website'])) {
+                                            echo '<a href="' . $row['Website'] . '">' . $row['Name'] . '</a></td>';
+                                        } else {
+                                            echo $row['Name'] . '</td>';
+                                        }
+                                        echo '<td class="middle">' . $row['Comment'] . '</td>';
+                                        echo '<td class="align-right mobile-hidden right">' . $row['Date'] . '</td>';
+                                        echo '</tr>';
                                     }
                                 }
                                 else
@@ -68,10 +73,13 @@ echo '<pre>
                     <form method="POST" action="/post">
                         <ul>
                             <li>
-                                <input type="text" name="name" placeholder="Name" maxlength="12" required>
+                                <input type="text" name="name" placeholder="Name" maxlength="12" required autocomplete="off">
                             </li>
                             <li class="flex-big">
-                                <input type="text" name="comment" placeholder="Comment" maxlength="32" required>
+                                <input type="text" name="comment" placeholder="Comment" maxlength="32" required autocomplete="off">
+                            </li>
+                            <li>
+                                <input type="text" name="website" placeholder="Website (optional)" maxlength="255" autocomplete="off">
                             </li>
                             <li>
                                 <input type="submit" value="Submit">

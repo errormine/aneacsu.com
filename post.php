@@ -13,8 +13,9 @@ try {
     {
         $name =  filter_var($_POST["name"], FILTER_SANITIZE_STRING);
         $comment = filter_var($_POST["comment"], FILTER_SANITIZE_STRING);
+        $website = $_POST["website"];
 
-        $sql = "INSERT INTO Guestbook VALUES (NULL, '$name', '$comment', DEFAULT)";
+        $sql = "INSERT INTO Guestbook VALUES (NULL, '$name', '$comment', DEFAULT, '$website')";
 
         if ($conn->query($sql) === TRUE)
         {

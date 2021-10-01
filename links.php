@@ -55,7 +55,6 @@ include "include/head.php";
                 <div class="content">
                     <ul class="word-list">
                         <li><a href="https://how-i-experience-web-today.com/detail.html">Web 2.0</a></li>
-                        <li><a href="https://transfer.sh">transfer.sh</a></li>
                         <li><a href="https://youtu.be/7Pq-S557XQU">Humans Need Not Apply</a></li>
                         <li><a href="https://solar.lowtechmagazine.com/">LOW←TECH MAGAZINE</a></li>
                         <li><a href="http://www.roysac.com/default.html">ASCII Art and ANSI Art</a></li>
