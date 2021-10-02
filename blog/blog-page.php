@@ -8,7 +8,7 @@ $page = 'posts/' . $postSlug;
 if (file_exists($page)) {
     $markdown = file_get_contents($page);
     $pageTitle = getPostTitle($markdown);
-    $summary = getFirstLines($markdown, 5, 4);
+    $summary = getFirstLines($markdown, 1, 4);
 } else {
     $markdown = "# 404 <br/> Post '$postSlug' not found 😢 ";
     $pageTitle = 'Blog post not found!';
