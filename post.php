@@ -15,7 +15,7 @@ try {
         $comment = filter_var($_POST["comment"], FILTER_SANITIZE_STRING);
         $website = $_POST["website"];
 
-        $sql = "INSERT INTO Guestbook VALUES (NULL, '$name', '$comment', DEFAULT, '$website')";
+        $sql = "INSERT INTO Guestbook VALUES (NULL, '$name', '$comment', DEFAULT, IF('$website' = '', NULL, '$website'))";
 
         if ($conn->query($sql) === TRUE)
         {
@@ -25,7 +25,7 @@ try {
 
     $conn->close();
 } catch (Exception $e) {
-    $result = "Post failed.";
+    $result = "Post failed." . $e->getMessage();
 }
 header("Refresh: 5; URL=guestbook");
 ?>
