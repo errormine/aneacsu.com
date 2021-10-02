@@ -35,7 +35,7 @@ Numbered list:
   3. repeat
 
 ### Image:
-[![Image](/images/eye-transparent.gif "icon")](/heal)
+[![Image](/images/grafitti.gif "icon")](/heal)
 
 > Markdown uses email-style > characters for blockquoting.
 Inline <sup title="Hypertext Markup Language">HTML</sup> is supported.

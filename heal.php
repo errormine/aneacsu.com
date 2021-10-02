@@ -8,7 +8,7 @@
     <title>h e a l</title>
     <style>
         body, html {
-            background: #000 url('/images/bg_dark_anim_0_08.gif');
+            background: #000 url('/images/bg_nerves02.gif');
             width: 100%;
             height: 100%;
             display: flex;
@@ -26,16 +26,26 @@
             background: none;
             border: none;
             cursor: pointer;
+            z-index: 1;
+            font-family: serif;
         }
 
         button:hover {
             color: #e4acba;
         }
+
+        .bob {
+            position: absolute;
+            top: 50%;
+            left: 80%;
+            animation: AnimBob 5s infinite;
+            opacity: 0.08;
+        }
     </style>
 </head>
 <body>
     <div>
-        <button onclick="document.getElementById('heal').play();">ああああああああ</button>
+        <button onclick="document.getElementById('heal').play();">WILL YOU LISTEN?</button>
         <audio id="heal" preload="auto" loop>
             <source src="/audio/BGM_011.ogg" type="audio/ogg">
             <source src="/audio/kikiyama.mp3" type="audio/mpeg">
