@@ -13,3 +13,9 @@ RewriteRule .* - [L,R=404]
 
 # Custom 404 Page
 ErrorDocument 404 /404
+
+#Security Headers
+Header set X-XSS-Protection "1; mode=block"
+Header always append X-Frame-Options SAMEORIGIN
+Header set X-Content-Type-Options nosniff
+Header set Content-Security-Policy "default-src 'self'"
