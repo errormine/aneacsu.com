@@ -37,24 +37,13 @@ header("Refresh: 5; URL=guestbook");
         <link rel="shortcut icon" href="/favicon.png">
         <?php include($_SERVER['DOCUMENT_ROOT'] . "/css_import.php") ?>
         <title>POST</title>
-        <style>
-            html {
-                height: 100%;
-                display: flex;
-                align-items: center;
-                height: 100%;
-            }
-
-            body {
-                width: 40%;
-            }
-        </style>
+        <link rel="stylesheet" href="css/small-window.css">
     </head>
     <body> 
         <main>
             <section id="websites">
                 <h2 class="title">POST</h2>
-                <div class="content" style="text-align: center;">
+                <div class="content">
                     <p>
                         <?php echo $result; ?>
                     </p>
