@@ -13,11 +13,17 @@
             <section id="websites">
                 <h2 class="title">ERROR 404 PAGE NOT FOUND</h2>
                 <div class="content">
-                    <p class="italic">
+                    <p class="text">
                         <?php 
-                        $response = file_get_contents('http://api.quotable.io/random'); 
+                        $response = file_get_contents('api/quotes.txt'); 
                         $response = json_decode($response);
-                        echo "\"" . $response->{'content'} . "\"";
+                        $quote = $response[rand(0, 1642)];
+                        echo "\"" . $quote->{"text"} . "\"";
+                        ?>
+                    </p>
+                    <p class="italic author">
+                        <?php
+                        echo "&mdash; " . $quote->{"author"};
                         ?>
                     </p>
                     <br>
