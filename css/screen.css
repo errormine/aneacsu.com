@@ -48,3 +48,19 @@ a {
   color: inherit;
   font-weight: bold;
 }
+
+/* NAVIGATION */
+
+nav {
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+nav ul {
+  text-align: center;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0.5rem 1rem;
+}
