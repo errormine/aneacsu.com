@@ -53,7 +53,6 @@ p {
 
 a {
   color: inherit;
-  display: block;
 }
 
 /* HEADER */
@@ -80,6 +79,10 @@ nav ul, footer ul {
 
 nav li, footer li {
   padding: 0.5rem;
+}
+
+nav a {
+  display: block;
 }
 
 nav li:hover, footer li:hover {
