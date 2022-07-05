@@ -31,7 +31,7 @@ $path = isset($dirName) ? "./" . $dirName . "/" : ".";
         $albumName = substr(ucwords(str_replace("-", " ", $dirName)), 11);
     ?>
     <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/lightbox.css">
+    <link rel="stylesheet" href="/assets/css/glightbox.min.css">
     <title><?php echo $albumName; ?></title>
 </head>
 <body>
@@ -57,7 +57,7 @@ $path = isset($dirName) ? "./" . $dirName . "/" : ".";
                         // Output image link
                         ?>
                         <li style="--aspect-ratio: <?php list($width, $height) = getimagesize($thumb); echo ($width > $height) ? "2/1;" : "1/2;"; ?>">
-                            <a href="<?php echo $path; ?>">
+                            <a href="<?php echo $path; ?>" class="glightbox">
                                 <img src="<?php echo $thumb; ?>" alt="" />
                             </a>
                         </li>
@@ -69,7 +69,15 @@ $path = isset($dirName) ? "./" . $dirName . "/" : ".";
         </section>
     </main>
     <?php include($_SERVER["DOCUMENT_ROOT"] . '/assets/include/photo-footer.php'); ?>
-    <script type="text/javascript" src="/assets/js/lightbox.js"></script>
+    <script type="text/javascript" src="/assets/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+        const lightbox = GLightbox({
+            preload: true,
+            openEffect: "fade",
+            touchNavigation: true,
+            loop: true
+        });
+    </script>
     <script data-goatcounter="https://aneacsu.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 <?php

@@ -191,8 +191,8 @@ article a[href^="http"]::after {
 
 /* Album view */
 #album {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   grid-gap: 1rem;
 }
 
@@ -206,7 +206,6 @@ article a[href^="http"]::after {
 
 #album li {
   margin: 0;
-  height: 24rem;
 }
 
 #album li img {
