@@ -13,14 +13,21 @@
         <section id="home">
             <article id="about">
                 <h1>ABOUT</h1>
-                <p>I'm a Cybersecurity and Information Technology student in Chicago, IL. I'm also an amateur programmer, hobbyist photographer, and aspiring game developer. I would like to start writing more so eventually I might create a blog page or something similar.</p>
-                <figure>
-                    <img src="" alt="">
-                    <figcaption></figcaption>
+                <figure class="float-right small">
+                    <picture>
+                        <source srcset="/assets/images/cat.webp" type="image/webp">
+                        <source srcset="/assets/images/cat.jpg" type="image/jpeg">
+                        <img src="/asset/images/cat.jpg" alt="">
+                    </picture>
+                    <figcaption>Pretend this is me</figcaption>
                 </figure>
+                <p>I'm a Cybersecurity and Information Technology student in Chicago, IL. I'm also an amateur web developer, programmer, and artist.</p>
+                <p>I'm currently learning about low poly 3D art and video game development, and I'm planning on sharing some of it soon.</p>
+                <p>This website was recently renovated so I could have somewhere to share my pictures and not have to rely on websites like Flickr.</p>
+                <p>I would also like to start writing more so I might eventually create a blog page or something similar.</p>
             </article>
             <article id="hobbies">
-                <h2>HOBBIES</h2>
+                <h3>HOBBIES</h3>
                 <ul>
                     <li>
                         <a href="https://letterboxd.com/prycaustic/">Film</a>
@@ -37,7 +44,7 @@
                 </ul>
             </article>
             <article id="contact">
-                <h2>CONTACT</h2>
+                <h3>CONTACT</h3>
                 <p>
                     <ul>
                         <li>

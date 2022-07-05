@@ -84,6 +84,7 @@ footer {
   text-align: center;
 }
 
+/* Home */
 #home {
   display: flex;
   flex-wrap: wrap;
@@ -91,6 +92,11 @@ footer {
 }
 
 #home > * {
+  flex-basis: 50%;
+  flex-grow: 1;
+}
+
+#about {
   flex-basis: 100%;
 }
 
@@ -101,6 +107,20 @@ a {
 
 main li {
   margin: 0.5rem 0;
+}
+
+/* Figures */
+figure {
+  margin: 1rem auto;
+  width: 65%;
+}
+
+figure img {
+  width: 100%;
+}
+
+figcaption {
+  text-align: center;
 }
 
 /* External links */
@@ -217,12 +237,12 @@ article a[href^="http"]::after {
       width: 100%;
     }
 
-    #home > * {
-      flex-basis: 50%;
-      flex-grow: 1;
+    .float-right {
+      float: right;
+      margin-left: 2rem;
     }
 
-    #about {
-      flex-basis: 100%;
+    .small {
+      width: 30%;
     }
 }
