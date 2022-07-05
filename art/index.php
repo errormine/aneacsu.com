@@ -18,5 +18,6 @@
     <footer>
         Created with love for the web.
     </footer>
+    <script data-goatcounter="https://aneacsu.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

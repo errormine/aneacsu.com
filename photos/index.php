@@ -39,5 +39,6 @@
         </section>
     </main>
     <?php include($_SERVER["DOCUMENT_ROOT"] . '/assets/include/photo-footer.php'); ?>
+    <script data-goatcounter="https://aneacsu.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
