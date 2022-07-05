@@ -190,9 +190,10 @@ article a[href^="http"]::after {
 }
 
 /* Album view */
-#album ul {
+#album {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr));
+  grid-gap: 1rem;
 }
 
 #album li,
@@ -204,6 +205,7 @@ article a[href^="http"]::after {
 }
 
 #album li {
+  margin: 0;
   height: 24rem;
 }
 
