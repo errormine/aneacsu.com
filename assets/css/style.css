@@ -204,7 +204,6 @@ article a[href^="http"]::after {
 }
 
 #album li {
-  margin: 0;
   height: 24rem;
 }
 
