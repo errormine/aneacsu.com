@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Andrei Neacsu</title>
+
+    <!-- meta tags-->
+    <meta property="theme-color" content="#e0d5c9">
+    <meta property="og:title" content="Andrei Neacsu">
+    <meta property="og:description" content="I'm a Cybersecurity and Information Technology student in Chicago, IL.">
+    <meta property="og:image" content="/favicon.ico">
 </head>
 <body id="index">
     <?php include($_SERVER["DOCUMENT_ROOT"] . '/assets/include/header.html'); ?>

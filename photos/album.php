@@ -29,16 +29,28 @@ $path = isset($dirName) ? "./" . $dirName . "/" : ".";
     if (is_dir($path) && !empty($dir)) 
     {
         $albumName = substr(ucwords(str_replace("-", " ", $dirName)), 11);
+
+        // Check for album description
+        $description = "This album has no description.";
     ?>
     <link rel="stylesheet" href="/assets/css/style.css">
     <link rel="stylesheet" href="/assets/css/glightbox.min.css">
     <title><?php echo $albumName; ?></title>
+
+    <!-- meta tags-->
+    <meta property="theme-color" content="#e0d5c9">
+    <meta property="og:site_name" content="Andrei Neacsu">
+    <meta property="og:title" content="<?php echo $albumName; ?>">
+    <meta property="og:description" content="<?php echo substr($description, 0, 48) . "..."; ?>">
+    <meta property="og:image" content="<?php echo "/photos/" . $dirName . "/thumbnails/thumb_" . scandir($path)[2]; ?>">
+    <meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
     <?php include($_SERVER["DOCUMENT_ROOT"] . "/assets/include/header.html"); ?>
     <main>
         <section>
             <h1><?php echo $albumName; ?></h1>
+            <p><?php echo $description; ?></p>
             <ul id="album">
             <?php
                 foreach ($dir as $photo) 

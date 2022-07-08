@@ -8,9 +8,18 @@
 </head>
 <body>
     <form action="/upload.php" method="POST" enctype="multipart/form-data">
+        <label for="albumName">Album Name</label>
         <input type="text" name="albumName" id="albumName" required>
+
+        <label for="description">Description</label>
+        <input type="text" name="description" id="description">
+
+        <label for="images">Images (JPG)</label>
         <input type="file" name="images[]" id="images" accept="image/jpeg" multiple>
+
+        <label for="password">Password</label>
         <input type="password" name="password" id="password">
+        
         <input type="submit" value="Upload" name="submit">
     </form>
 </body>
