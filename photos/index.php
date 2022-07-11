@@ -28,7 +28,7 @@
                         <li>
                             <a href="/photos/album.php?name=<?php echo $album; ?>">
                                 <img class="album-thumbnail" src="<?php echo "/photos/" . $album . "/thumbnails/thumb_" . scandir($album)[2]; ?>" alt="">
-                                <p class="album-name"><?php echo substr($albumName, 11); ?></p>
+                                <p class="album-name"><?php echo strtoupper(substr($albumName, 11)); ?></p>
                             </a>
                         </li>
                         <?php
