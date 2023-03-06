@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
     <title>Andrei Neacsu</title>
 
     <!-- meta tags-->
@@ -14,7 +14,25 @@
     <meta property="og:image" content="/favicon.ico">
 </head>
 <body id="index">
-    <?php include($_SERVER["DOCUMENT_ROOT"] . '/assets/include/header.html'); ?>
+    <header>
+        <nav>
+            <h3>
+                <a href="/">Andrei Neacsu</a>
+            </h3>
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/blog/">Blog</a>
+                </li>
+                <li>
+                    <a href="/photos/">Photography</a>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
     <main>
         <section id="home">
             <article id="about">
@@ -36,16 +54,16 @@
                 <h3>HOBBIES</h3>
                 <ul>
                     <li>
+                        <a href="/blog/">Blog</a>
+                    </li>
+                    <li>
+                        <a href="/photos/">Photography</a>
+                    </li>
+                    <li>
                         <a href="https://letterboxd.com/prycaustic/">Film</a>
                     </li>
                     <li>
                         <a href="https://www.goodreads.com/user/show/98702910-andrei">Literature</a>
-                    </li>
-                    <li>
-                        <a href="https://www.last.fm/user/errormine">Music</a>
-                    </li>
-                    <li>
-                        <a href="https://steamcommunity.com/id/errormine/">Video Games</a>
                     </li>
                 </ul>
             </article>
@@ -58,9 +76,6 @@
                         </li>
                         <li>
                             <a href="https://github.com/prycaustic">GitHub</a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/errormine404">Twitter</a>
                         </li>
                     </ul>
                 </p>
