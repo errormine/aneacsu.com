@@ -112,7 +112,7 @@ main li {
 /* Figures */
 figure {
   margin: 1rem auto;
-  width: 65%;
+  width: 95%;
 }
 
 figure img {
@@ -218,6 +218,20 @@ article a[href^="http"]::after {
 
 #album li img:hover {
   opacity: 0.7;
+}
+
+/* Blog */
+#blog .post header {
+  display: flex;
+  justify-content: space-between;
+}
+
+#blog .post header h4 {
+  align-self: center;
+}
+
+#blog .read-more {
+  text-align: right;
 }
 
 @media (min-width: 900px) {
