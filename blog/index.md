@@ -14,7 +14,7 @@ permalink: "/blog"
     <!-- meta tags-->
     <meta property="theme-color" content="#e0d5c9">
     <meta property="og:title" content="{{ page.title }} - {{ site.title }}">
-    <meta property="og:description" content="My blog... contains various writings about various things.">
+    <meta property="og:description" content="My blog... contains writings about various things.">
     <meta property="og:image" content="/favicon.ico">
 </head>
 <body id="index">
