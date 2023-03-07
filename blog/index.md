@@ -1,6 +1,6 @@
 ---
 title: BLOG
-permalink: "blog"
+permalink: "/blog/"
 ---
 
 <html lang="en">
