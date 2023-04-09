@@ -3,9 +3,9 @@ layout: blog-post
 title: "Recreating Quake / GoldSrc Movement in Godot 4.0"
 ---
 
-About a year ago I wanted to try making an FPS game using Godot 3.5, and I really like how the player movement in games like Half-life and Quake feel so I wanted to recreate it. I spent a bunch of time trying to figure it out, but never really managed to get my head around it. Finally, I tried again and this time I got something which I am pretty happy with. It might not be perfect as I still don't really know what I'm doing, but I wanted to document what I've learned and share it.
+About a year ago, I wanted to try making an FPS game using Godot 3.5. I really liked how the player movement in games like Half-life and Quake felt, so I wanted to recreate it. I spent a lot of time trying to figure it out, but I never really managed to get my head around it. Finally, I tried again, and this time I got something that I'm pretty happy with. It might not be perfect, as I still don't really know what I'm doing, but I wanted to document what I've learned and share it.
 
-This will cover how to implement just the character controls and nothing else. The system I've come up with has smooth movement and the "bug" which lets you bunny hop and surf like in Half-life. I assume you have a decent grasp of the fundamentals of Godot, and I won't be explaining everything in complete detail, but all the code and information you need to get it working for yourself should be on this page.
+This guide will cover how to implement just the character controls and nothing else. The system I've come up with has smooth movement and the "bug" that lets you bunny hop and surf like in Half-life. I assume you have a decent grasp of the fundamentals of Godot, and I won't be explaining everything in complete detail. However, all the code and information you need to get it working for yourself should be on this page.
 
 Here is a [video example of the script working in game](youtube.com).
 
