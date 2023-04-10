@@ -7,7 +7,7 @@ About a year ago, I wanted to try making an FPS game using Godot 3.5. I really l
 
 This guide will cover how to implement just the character controls and nothing else. The system I've come up with has smooth movement and the "bug" that lets you bunny hop and surf like in Half-life. I assume you have a decent grasp of the fundamentals of Godot, and I won't be explaining everything in complete detail. However, all the code and information you need to get it working for yourself should be on this page.
 
-Here is a [video example of the script working in game](youtube.com).
+Here is a [video example of the script working in game](https://youtu.be/ssU6ec_um78).
 
 If you would like to download the project files they are also available: [FPS_Player_Controller.zip](/assets/files/FPS%20Player%20Controller.zip)
 
