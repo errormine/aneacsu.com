@@ -21,6 +21,7 @@ First, we need to set up our Player scene. It is just a CharacterController3D wi
 </figure>
 
 The CollisionShape3D is a CylinderShape with a height of 1.4m and radius of 0.5m. This is a rough approximation of the player height in Half-life based on the GoldSrc hammer units to real world meters. I've also decided to use a cylinder for the player shape even though Half-life uses a box because it seems to be slightly better at not getting stuck on world geometry, and it is usually the standard that I see nowadays.
+*EDIT 2023-04-28: I've found that the CylinderShape is actually quite buggy and not as reliable as I initially thought. After a bit of testing, I recommend using a BoxShape instead as it seems to not suffer from any of the issues like the cylinder. I will update again if necessary.
 
 <figure>
     <img src="/assets/images/qm-collisionshape3d.jpg" alt="">
