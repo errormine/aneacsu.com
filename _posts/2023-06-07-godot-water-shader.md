@@ -96,3 +96,4 @@ void fragment()
 	NORMAL_MAP = normal_blend;
 }
 ```
+{: .language-gdscript}
