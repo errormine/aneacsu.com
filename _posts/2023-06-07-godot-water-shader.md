@@ -9,6 +9,8 @@ I will do a full write up on how it works eventually (probably... maybe).
 
 ## Video example
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/M4o9G-rhFVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Download
 
 Here is the shader material that you should be able to drag and drop into your project: [water_material.tres](/assets/files/water_material.tres)
