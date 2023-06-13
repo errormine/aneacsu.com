@@ -26,8 +26,6 @@ html {
     background-color: var(--white);
     background-image: url(/assets/images/old-moon.png);
     color: var(--black);
-    width: 100vw;
-    overflow-x: hidden;
 }
 
 p {margin-bottom: 1rem;}
@@ -125,6 +123,10 @@ figcaption {
   text-align: center;
 }
 
+.small {
+  width: 50%;
+}
+
 /* External links */
 article a[href^="http"]::after {
   content: "";
@@ -136,98 +138,7 @@ article a[href^="http"]::after {
   display: inline-block;
 }
 
-/* Gallery */
-#listing {
-  display: flex;
-  flex-wrap: wrap;
-  grid-gap: 1rem;
-  justify-content: space-evenly;
-  margin: 0 auto;
-  width: 100%;
-}
-
-#listing * {
-  flex-basis: 24rem;
-  flex-grow: 1;
-}
-
-#listing a,
-#listing a img {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-.album-thumbnail {
-  transition: all 0.2s;
-}
-
-.album-thumbnail:hover {
-  filter: brightness(0.5);
-}
-
-.album-thumbnail:hover ~ .album-name {
-  opacity: 1;
-}
-
-#listing a {
-  position: relative;
-}
-
-#listing a img {
-  object-fit: cover;
-  object-position: center;
-}
-
-.album-name {
-  transition: all 0.2s;
-  pointer-events: none;
-  font-family: "EB Garamond";
-  font-size: 3rem;
-  color: white;
-  position: absolute;
-  bottom: 0;
-  opacity: 0;
-  margin: 0;
-  font-size: 4rem;
-  word-wrap: break-word;
-}
-
-/* Album view */
-#album {
-  display: flex;
-  flex-wrap: wrap;
-  grid-gap: 1rem;
-}
-
-#album li,
-#album li a,
-#album li img {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-
-#album li {
-  margin: 0;
-}
-
-#album li img {
-  object-fit: cover;
-  object-position: center;
-  transition: all 0.25s;
-}
-
-#album li img:hover {
-  opacity: 0.7;
-}
-
 /* Blog */
-#blog .post header {
-  display: flex;
-  justify-content: space-between;
-}
-
 #blog .post header h4 {
   align-self: center;
 }
@@ -253,6 +164,11 @@ pre {
 }
 
 @media (min-width: 900px) {
+    html {
+      width: 100vw;
+      overflow-x: hidden;
+    }
+    
     header nav {
       display: flex;
       justify-content: space-between;
@@ -278,5 +194,10 @@ pre {
 
     .small {
       width: 30%;
+    }
+
+    #blog .post header {
+      display: flex;
+      justify-content: space-between;
     }
 }
