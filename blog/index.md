@@ -18,25 +18,7 @@ permalink: "/blog/"
     <meta property="og:image" content="/favicon.ico">
 </head>
 <body id="index">
-    <header>
-        <nav>
-            <h3>
-                <a href="/">Andrei Neacsu</a>
-            </h3>
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/blog/">Blog</a>
-                </li>
-                <li>
-                    <a href="/photos/">Photography</a>
-                </li>
-            </ul>
-        </nav>
-        <hr>
-    </header>
+    {% include header.html %}
     <main id="blog">
         <section>
             <header>
