@@ -1,10 +1,12 @@
 ---
 layout: blog-post
 title: "Stylized Water Shader Godot 4.0"
+description: "This is a rough recreation of a Unity shader called Stylized Water Shader"
 ---
 
-This is a rough recreation of a Unity shader called: [Stylized Water Shader](https://alexanderameye.github.io/notes/stylized-water-shader/)
-It is currently missing a few features including the fresnel color, refraction, and Gerstner waves. I felt they weren't necessary for my use case, but you are welcome to adapt this code and add those yourself.
+This is a rough recreation of a Unity shader called [Stylized Water Shader](https://alexanderameye.github.io/notes/stylized-water-shader/)
+
+It is currently missing a few features including the fresnel color, refraction, reflections, and Gerstner waves. I felt they weren't necessary for my use case, but you are welcome to adapt this code and add those yourself. I might also add them in the future.
 
 <video autoplay loop muted>
   <source src="/assets/videos/water-shader.mp4" type="video/mp4">
