@@ -3,9 +3,8 @@ layout: blog-post
 title: "Stylized Water Shader Godot 4.0"
 ---
 
-After looking through several different water shader tutorials I couldn't find one I was totally satisfied with so I made my own based on all the ones I saw!
-
-Much of it is based on this shader for Unity that I tried to recreate in Godot: [Stylized Water Shader](https://alexanderameye.github.io/notes/stylized-water-shader/)
+This is a rough recreation of a Unity shader called: [Stylized Water Shader](https://alexanderameye.github.io/notes/stylized-water-shader/)
+It is currently missing a few features including the fresnel color, refraction, and Gerstner waves. I felt they weren't necessary for my use case, but you are welcome to adapt this code and add those yourself.
 
 <video autoplay loop muted>
   <source src="/assets/videos/water-shader.mp4" type="video/mp4">
