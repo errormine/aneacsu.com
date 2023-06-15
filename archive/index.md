@@ -32,17 +32,16 @@ permalink: "/archive/"
             </article>
             <article>
                 <h2>Video Games</h2>
-                <p></p>
-                <hr>
-            </article>
-            <article>
-                <h2>3D Models</h2>
-                <p></p>
-                <hr>
-            </article>
-            <article>
-                <h2>Websites</h2>
-                <p></p>
+                <ol>
+                    <li>
+                        <a href="https://experimentaljams.com/game/?id=49">Creoterra</a>
+                        <p>Bring life to an empty planet. Very basic sandbox game which grows as you play it. This was created for the first ever Experimental Game Jam "Grid". I wanted to make something very simple that would develop around your actions. It's a bit unfinished since I ran out of time, but I'm hoping to keep learning and make more!</p>
+                    </li>
+                    <li>
+                        <a href="https://errormine.itch.io/boing">Boing!</a>
+                        <p>Jump on a trampoline for as long as you can. This is a crappy clone of the WarioWare mini-game of the same name. It's the first thing I created using Godot 3.5, and I think it's pretty cute.</p>
+                    </li>
+                </ol>
                 <hr>
             </article>
         </section>
@@ -50,6 +49,15 @@ permalink: "/archive/"
     <footer>
         Created with love for the web.
     </footer>
+    <script type="text/javascript" src="/photos/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+        const lightbox = GLightbox({
+            preload: true,
+            openEffect: "fade",
+            touchNavigation: true,
+            loop: true
+        });
+    </script>
     <script data-goatcounter="https://aneacsu.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
