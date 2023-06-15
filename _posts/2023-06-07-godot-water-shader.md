@@ -5,11 +5,14 @@ title: "Stylized Water Shader Godot 4.0"
 
 After looking through several different water shader tutorials I couldn't find one I was totally satisfied with so I made my own based on all the ones I saw!
 
-I will do a full write up on how it works eventually (probably... maybe).
+Much of it is based on this shader for Unity that I tried to recreate in Godot: [Stylized Water Shader](https://alexanderameye.github.io/notes/stylized-water-shader/)
 
 ## Video example
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/M4o9G-rhFVA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+ <video autoplay loop muted>
+  <source src="/assets/videos/water-shader.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video> 
 
 ## Download
 
@@ -32,36 +35,39 @@ uniform vec3 deep_color : source_color = vec3(0.0, 0.25, 0.45);
 
 uniform float foam_amount : hint_range(0.0, 2.0) = 0.2;
 uniform vec3 foam_color : source_color = vec3(1);
-uniform sampler2D foam_noise : hint_default_white;
 
-uniform float roughness : hint_range(0.0, 1.0) = 0.05;
+uniform float roughness : hint_range(0.0, 1.0) = 0.1;
 
 uniform sampler2D wave_texture;
-uniform float wave_scale = 4.0;
-uniform float height_scale = 0.15;
-varying float wave_height;
-varying vec3 uv_world_pos;
+uniform float wave_height = 0.15;
+varying vec2 uv_world;
 
-uniform sampler2D normal1;
-uniform vec2 wave_dir1 = vec2(1.0, 0.0);
-uniform sampler2D normal2;
-uniform vec2 wave_dir2 = vec2(0.0, 1.0);
-uniform float wave_speed : hint_range(0.0, 0.2) = 0.015;
+uniform sampler2D normal_texture;
+uniform float normal_scale = 8.0;
+uniform float wave_direction : hint_range(0, 1, 0.05) = 1.0;
+uniform float wave_speed : hint_range(0, 1) = 0.15;
 
 vec3 screen(vec3 base, vec3 blend){
 	return 1.0 - (1.0 - base) * (1.0 - blend);
 }
 
+vec2 panning_uv(vec2 uv, float tiling) {
+	float offset = wave_direction * 2.0 - 1.0;
+	vec2 uv_offset = vec2(cos(offset * PI), sin(offset * PI));
+	uv_offset = normalize(uv_offset) * TIME * (wave_speed / 10.0);
+	
+	return uv * (1.0 / tiling) + uv_offset;
+}
+
 void vertex() {
-	// Vertext displacement for waves
-	uv_world_pos = (MODEL_MATRIX * vec4(VERTEX, 1.0)).xyz;
-	wave_height = texture(wave_texture, uv_world_pos.xz / wave_scale + TIME * wave_speed).r;
-	VERTEX.y += wave_height * height_scale;
+	// Vertex displacement for waves
+	uv_world = (MODEL_MATRIX * vec4(VERTEX, 1.0)).xz;
+	VERTEX.y += texture(wave_texture, panning_uv(uv_world, normal_scale)).x * wave_height;
 }
 
 void fragment()
 {
-	// Depth texture magic
+	// Depth texture from https://github.com/godotengine/godot/issues/77798#issuecomment-1575222421
 	float depth = texture(DEPTH_TEXTURE, SCREEN_UV, 0.0).r;
   	vec3 ndc = vec3(SCREEN_UV * 2.0 - 1.0, depth);
 	vec4 world = INV_VIEW_MATRIX * INV_PROJECTION_MATRIX * vec4(ndc, 1.0);
@@ -86,9 +92,9 @@ void fragment()
 	color_out = screen(color_out, foam);
 	
 	// Normal maps
-	vec2 normal_offset1 = (TIME * wave_dir1) * wave_speed;
-	vec2 normal_offset2 = (TIME * wave_dir2) * wave_speed;
-	vec3 normal_blend = mix(texture(normal1, uv_world_pos.xz / wave_scale + normal_offset1), texture(normal2, uv_world_pos.xz / wave_scale + normal_offset2), 0.5).rgb;
+	vec4 wave_normal1 = texture(normal_texture, panning_uv(uv_world, normal_scale));
+	vec4 wave_normal2 = texture(normal_texture, panning_uv(uv_world, -normal_scale));
+	vec3 normal_blend = mix(wave_normal1, wave_normal2, 0.5).rgb;
 	
 	ALBEDO = color_out;
 	ALPHA = alpha_blend;
@@ -96,4 +102,4 @@ void fragment()
 	NORMAL_MAP = normal_blend;
 }
 ```
-{: .language-gdscript}
+{: .language-glsl}
