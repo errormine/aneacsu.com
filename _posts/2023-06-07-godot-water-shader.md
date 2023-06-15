@@ -7,9 +7,7 @@ After looking through several different water shader tutorials I couldn't find o
 
 Much of it is based on this shader for Unity that I tried to recreate in Godot: [Stylized Water Shader](https://alexanderameye.github.io/notes/stylized-water-shader/)
 
-## Video example
-
- <video autoplay loop muted>
+<video autoplay loop muted>
   <source src="/assets/videos/water-shader.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video> 

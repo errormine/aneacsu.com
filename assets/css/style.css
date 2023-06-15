@@ -110,7 +110,8 @@ main li {
 }
 
 /* Figures */
-figure {
+figure,
+video {
   margin: 1rem auto;
   width: 95%;
 }
