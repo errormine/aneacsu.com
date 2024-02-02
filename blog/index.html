@@ -30,7 +30,7 @@ permalink: "/blog/"
                     <h2>{{ post.title }}</h2>
                     <h4><i>{{ post.date | date: "%-d&nbsp;%B&nbsp;%Y" }}</i></h4>
                 </header>
-                <p>{{ post.excerpt | markdownify }}</p>
+                {{ post.excerpt | markdownify }}
                 <p class="read-more"><a href="{{ post.url }}">Continue Reading...</a></p>
                 <hr>
             </article>

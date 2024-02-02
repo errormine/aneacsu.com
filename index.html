@@ -1,3 +1,7 @@
+---
+title: INDEX
+permalink: "/index.html"
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,35 +18,13 @@
     <meta property="og:image" content="/favicon.ico">
 </head>
 <body id="index">
-    <header>
-        <nav>
-            <h3>
-                <a href="/">Andrei Neacsu</a>
-            </h3>
-            <ul>
-                <li>
-                    <a href="/">Home</a>
-                </li>
-                <li>
-                    <a href="/blog/">Blog</a>
-                </li>
-                <li>
-                    <a href="/archive/">Archive</a>
-                </li>
-            </ul>
-        </nav>
-        <hr>
-    </header>
+    {% include header.html %}
     <main>
         <section id="home">
             <article id="about">
                 <h1>ABOUT</h1>
                 <figure class="float-right small">
-                    <picture>
-                        <source srcset="/assets/images/cat.webp" type="image/webp">
-                        <source srcset="/assets/images/cat.jpg" type="image/jpeg">
-                        <img src="/asset/images/cat.jpg" alt="">
-                    </picture>
+                    <img srcset="/assets/images/cat.webp, /asset/images/cat.jpg" alt="Tomcat having his cheek pinched">
                     <figcaption>Pretend this is me</figcaption>
                 </figure>
                 <p>I'm a student in Chicago, IL. I'm also an amateur web developer, programmer, and artist.</p>

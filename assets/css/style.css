@@ -20,7 +20,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 html {
     font-family: "Andada Pro";
-    font-size: 1.125rem;
     line-height: 1.35;
 
     background-color: var(--white);
@@ -34,20 +33,22 @@ i {font-style: italic;}
 
 h1, h2, h3, h4, h5 {
   font-family: "EB Garamond";
+  font-weight: 500;
+  margin-bottom: 0.5rem;
 }
 
 h1 {
   margin-top: 0;
-  font-size: 3.052rem;
+  font-size: 2rem;
 }
 
-h2 {font-size: 2.441rem;}
+h2 {font-size: 1.541rem;}
 
-h3 {font-size: 1.953rem;}
+h3 {font-size: 1.33rem;}
 
-h4 {font-size: 1.563rem;}
+h4 {font-size: 1.15rem;}
 
-h5 {font-size: 1.25rem;}
+h5 {font-size: 1.05rem;}
 
 small, .text_small {font-size: 0.8rem;}
 
@@ -164,7 +165,7 @@ pre {
   border-radius: 0.25rem;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 700px) {
     html {
       width: 100vw;
       overflow-x: hidden;
@@ -180,7 +181,7 @@ pre {
     }
 
     body {
-      width: 40%;
+      width: 36rem;
       margin: 0 auto;
     }
 
@@ -190,11 +191,11 @@ pre {
 
     .float-right {
       float: right;
-      margin-left: 2rem;
+      margin: 0 1rem;
     }
 
     .small {
-      width: 30%;
+      width: 10rem;
     }
 
     #blog .post header {
