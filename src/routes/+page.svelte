@@ -8,9 +8,8 @@
 </svelte:head>
 
 <section>
-    <h2>Welcome</h2>
-    <p>I'm a student in Chicago, IL. I'm also a full-stack developer, amateur photographer, and artist.</p>
-    <p>I'm currently interested in video game development, and would love to share some games with you.</p>
+    <h2>About</h2>
+    <p>I'm a student in Chicago, IL. I'm also a full-stack developer, amateur photographer, and artist. I'm currently interested in video game development, and would love to share some games with you.</p>
     <p>Honestly, I have no clue what I'm doing!</p>
 </section>
 <section>
