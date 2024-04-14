@@ -1,6 +1,7 @@
 ---
 layout: blog-post
 title: Learning How to Shoot
+description: "My experience as a beginner with a camera."
 ---
 
 Photography is a wonderful medium for capturing the beauty and essence of the world around us. I recently started learning the fundamentals of this art form and practicing my skills on a Nikon D5600.

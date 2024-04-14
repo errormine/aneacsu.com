@@ -1,6 +1,7 @@
 ---
 layout: blog-post
 title: Learning Blender
+description: "Some of my experience working with Blender."
 ---
 
 I want to share my experience with learning Blender to create PSX style low poly 3D models for video games. Firstly, I must say that learning Blender has been a lot of fun. It has been fascinating to see how a basic geometric shape can transform into a complex 3D model with the right set of tools and techniques. However, it's not all sunshine and rainbows. There have been a few challenges along the way.

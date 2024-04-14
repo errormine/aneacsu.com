@@ -1,6 +1,7 @@
 ---
 layout: blog-post
 title: "Hello World"
+description: "I make website."
 ---
 
 I recently spent some time putting together this new website for personal use. While I wanted to keep things simple, I also wanted to include a blog system to share my thoughts and experiences with others. It's currently using PHP (which I kinda hate but idk what else there is) and some janky code I found on GitHub for the posts.

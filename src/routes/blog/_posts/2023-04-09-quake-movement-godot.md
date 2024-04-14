@@ -1,6 +1,7 @@
 ---
 layout: blog-post
 title: "Recreating Quake / GoldSrc Movement in Godot 4.0"
+description: "Really basic implementation of the movement system from old games like Half-life."
 ---
 
 About a year ago, I wanted to try making an FPS game using Godot 3.5. I really liked how the player movement in games like Half-life and Quake felt, so I wanted to recreate it. I spent a lot of time trying to figure it out, but I never really managed to get my head around it. Finally, I tried again, and this time I got something that I'm pretty happy with. It might not be perfect, as I still don't really know what I'm doing, but I wanted to document what I've learned and share it.
