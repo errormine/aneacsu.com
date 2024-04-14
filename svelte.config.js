@@ -1,3 +1,4 @@
+// From https://kit.svelte.dev/docs/adapter-static
 import adapter from '@sveltejs/adapter-static';
 
 export default {
