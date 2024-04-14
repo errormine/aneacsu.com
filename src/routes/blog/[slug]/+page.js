@@ -5,6 +5,7 @@ export async function load({ params }) {
     const content = post.default;
 
     return {
+        metadata: post.metadata,
         content,
     };
 };
