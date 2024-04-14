@@ -8,17 +8,14 @@
 </svelte:head>
 
 <section>
-    <h2>About</h2>
+    <h2>Welcome</h2>
     <p>I'm a student in Chicago, IL. I'm also a full-stack developer, amateur photographer, and artist.</p>
     <p>I'm currently interested in video game development, and would love to share some games with you.</p>
     <p>Honestly, I have no clue what I'm doing!</p>
 </section>
 <section>
-    <h2>Links</h2>
+    <h2>Social Links</h2>
     <ul>
-        <li>
-            <a href="mailto:andrei@aneacsu.com">Email</a>
-        </li>
         <li>
             <a href="https://github.com/prycaustic">GitHub</a>
         </li>
