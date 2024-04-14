@@ -13,7 +13,7 @@
 
 <section>
     <Breadcrumb {routes} />
-    <h2>{data.metadata.title}</h2>
+    <h2 id="top">{data.metadata.title}</h2>
     <svelte:component this={data.content} />
-    <Breadcrumb {routes} />
+    <p><a href="#top">Back to top &uarr;</a></p>
 </section>
