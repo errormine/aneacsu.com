@@ -1,6 +1,7 @@
 /** @type {import('./$types').LayoutLoad} */
 export async function load({ fetch }) {
-    const posts = await fetch('/api/posts');
+    const response = await fetch('/api/posts');
+    const posts = await response.json();
 
     return {
         posts
