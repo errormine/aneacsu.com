@@ -5,9 +5,9 @@
     export let data;
 </script>
 
-<main>
+<main class="content-grid">
     <header>
-        <h1>
+        <h1 class="full-width">
             <a href="/">Andrei Neacsu</a>
         </h1>
         <nav>

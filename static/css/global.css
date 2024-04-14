@@ -12,8 +12,3 @@
 .content-grid > .full-width {
     grid-column: full-width;
 }
-
-.content-grid > .aside-right,
-.full-width > .aside-right {
-    grid-column: aside-right;
-}
