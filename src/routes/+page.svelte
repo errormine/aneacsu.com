@@ -31,9 +31,7 @@
     <h2>Blog</h2>
     {#each data.posts as post}
         <article>
-            <h3>{post.title}</h3>
-            <p>{post.excerpt}</p>
-            <a href="{post.slug}">Read more</a>
+            {post.metadata.title}
         </article>
     {/each}
 </section>

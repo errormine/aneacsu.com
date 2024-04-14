@@ -2,7 +2,3 @@
     /** @type {import('./$types').PageData} */
     export let data;
 </script>
-
-<section>
-    <svelte:component this={data.content} />
-</section>
