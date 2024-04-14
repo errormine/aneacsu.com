@@ -1,6 +1,4 @@
 <script>
-    import 'agnostic-svelte/css/common.min.css';
-    
     /** @type {import('./$types').LayoutData} */
     export let data;
 </script>

@@ -1,12 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro&family=EB+Garamond:wght@500&display=swap');@import url('/css/reset.css');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --brown: #804E28;
+    --tan: #D49A76;
+    --orange: #F1C59F;
+    --black: #222222;
+    --grey: #CFC8C8;
+    --white: #e0d5c9;
+}
+
+html {
+    font-family: "Andada Pro", sans-serif;
+    line-height: 1.5;
+
+    background-color: var(--white);
+    background-image: url(/img/old-moon.png);
+    color: var(--black);
+    min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "EB Garamond", serif;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 2rem;
+}
+
+h2 {font-size: 1.75rem;}
+
+h3 {font-size: 1.5rem;}
+
+h4 {font-size: 1.3rem;}
+
+h5 {font-size: 1.05rem;}
+
+small, .text_small {font-size: 0.8rem;}
+
+a {
+    text-decoration: underline dotted;
+    color: var(--brown);
+}
+
 /* COMMON LAYOUTS */
 .content-grid, .full-width {
     display: grid;
-    grid-template-columns: [full-width-start] 1fr [content-start] minmax(0, 50rem) [content-end aside-right-start] 1fr [full-width-end];
+    grid-template-columns: [left full-width-start] 1fr [main] minmax(10rem, 40rem) [right] 1fr [full-width-end];
+    row-gap: 1rem;
 }
 
 .content-grid > *,
 .full-width > * {
-    grid-column: content;
+    grid-column: main;
 }
 
 .content-grid > .full-width {
