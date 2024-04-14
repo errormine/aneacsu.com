@@ -29,7 +29,7 @@
 </section>
 <section>
     <h2>Blog</h2>
-    {#each data.posts as post}
+    {#each data.posts.slice(0, 5) as post}
         <article>
             <h3>{post.metadata.title}</h3>
             <p>{post.metadata.description}</p>

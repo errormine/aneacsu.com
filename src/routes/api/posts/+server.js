@@ -1,8 +1,7 @@
 import { json } from '@sveltejs/kit';
 
 /** @type {import('./$types').RequestHandler} */
-export async function GET({ url }) {
-    const amount = url.searchParams.get('amount');
+export async function GET() {
     const postFiles = import.meta.glob('/src/routes/blog/_posts/*.md');
     const iPostFiles = Object.entries(postFiles);
 
@@ -30,10 +29,6 @@ export async function GET({ url }) {
     const sortedPosts = allPosts.sort((a, b) => {
         return new Date(b.metadata.date) - new Date(a.metadata.date);
     });
-
-    if (amount) {
-        return json(sortedPosts.slice(0, amount));
-    }
 
     return json(sortedPosts);
 };
