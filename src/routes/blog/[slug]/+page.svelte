@@ -10,7 +10,7 @@
 </article>
 
 <style>
-    article {
+    article > p {
         text-indent: 2rem;
     }
 </style>
