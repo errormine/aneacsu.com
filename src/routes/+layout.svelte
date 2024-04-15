@@ -4,11 +4,12 @@
 </script>
 
 <header>
-    <h1>
-        <a href="/">Andrei Neacsu</a>
-    </h1>
+    <h1>Andrei Neacsu</h1>
     <nav>
         <ul>
+            <li>
+                <a href="/">Home</a>
+            </li>
             <li>
                 <a href="/resume">Resume</a>
             </li>

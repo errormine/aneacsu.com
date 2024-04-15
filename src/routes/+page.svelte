@@ -9,7 +9,7 @@
 
 <section>
     <h2>About</h2>
-    <p>I'm a student in Chicago, IL. I'm also a full-stack developer, amateur photographer, and artist. I'm currently interested in video game development, and would love to share some games with you.</p>
+    <p>I'm a student in Chicago, IL. I'm also a developer, amateur photographer, and artist. I'm currently interested in video game development, and would love to share some games with you.</p>
     <p>Honestly, I have no clue what I'm doing!</p>
 </section>
 <section>
@@ -32,5 +32,5 @@
             <a href={"/blog/"+post.slug}>Read more</a>
         </article>
     {/each}
-    <p><a href="/blog">Previous posts &rarr;</a></p>
+    <a href="/blog">Previous posts &rarr;</a>
 </section>
