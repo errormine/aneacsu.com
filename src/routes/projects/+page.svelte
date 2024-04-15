@@ -1,8 +1,3 @@
-<script>
-    /** @type {import('./$types').PageData} */
-    export let data;
-</script>
-
 <section>
     <h2>Projects</h2>
     <p>Various projects which I've worked on over the years. Some are finished, some are not.</p>

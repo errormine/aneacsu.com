@@ -16,6 +16,8 @@
     --clr-dark-gray: #7A7A7A;
 
     --gradient-gray: linear-gradient(var(--clr-off-white), var(--clr-light-gray));
+
+    --agnostic-primary-modelight: var(--clr-primary);
 }
 
 html, body {

@@ -1,18 +1,29 @@
 <script>
     import { page } from '$app/stores';
+    import { Breadcrumb } from 'agnostic-svelte';
+    import 'agnostic-svelte/css/common.min.css';
 
     // Ensures pages are staticly prerendered
     export const prerender = true;
 
-    /** @type {import('./$types').LayoutData} */
-    export let data;
+    let routes = [
+        { label: 'home', url: '/' }
+    ];
+    let pathname = $page.url.pathname.split('/').filter(Boolean);
 
-    let pathname = $page.url.pathname.split('/').filter(Boolean)[0];
+    if (pathname != undefined) {
+        for (let path of pathname) {
+            routes.push({ label: path, url: '/' + path });
+        }
+    }
 </script>
 
 <header>
     <h1>Andrei Neacsu</h1>
 </header>
+<nav>
+    <Breadcrumb {routes} />
+</nav>
 <main class="content-grid">
     <slot/>
     <footer>
