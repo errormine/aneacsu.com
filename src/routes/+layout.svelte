@@ -28,3 +28,9 @@
         Created with love for the web.
     </footer>
 </main>
+
+<style>
+    h1 {
+        font-style: italic;
+    }
+</style>
