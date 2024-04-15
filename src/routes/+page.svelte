@@ -9,7 +9,7 @@
 
 <section>
     <h2>About</h2>
-    <p>I'm a student in Chicago, IL. I'm also a developer, amateur photographer, and artist. I'm currently interested in video game development, and would love to share some games with you. Honestly, I have no clue what I'm doing! I'm just trying to make fun stuff and learn as much as I can along the way.</p>
+    <p>I'm a student in Chicago, IL. I'm also a developer, amateur photographer, and artist. I'm currently interested in video game development, and would love to share some games with you. Honestly, I have no clue what I'm doing!</p>
 </section>
 <section>
     <h2>Blog</h2>

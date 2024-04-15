@@ -6,7 +6,7 @@
 
 <style>
     a {
-        display: block;
+        display: inline-block;
         position: relative;
         background: var(--gradient-primary);
         color: white;
@@ -16,7 +16,7 @@
         top: 0;
         transition: top 200ms;
         text-align: center;
-        margin: 0 auto;
+        margin: 0 0.5rem;
         max-width: fit-content;
     }
 

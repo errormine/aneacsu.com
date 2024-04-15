@@ -13,7 +13,8 @@
 :root {
     --clr-primary: #805d28;
     --clr-primary-dark: #603717;
-
+    
+    --clr-cream-white: #e0d5c9;
     --clr-off-white: #F5F5F5;
 
     --clr-light-gray: #EDEDED;
@@ -34,7 +35,7 @@ html, body {
     font-family: 'Andada Pro', serif;
     line-height: 1.5;
 
-    background: #e0d5c9;
+    background: var(--clr-cream-white);
     background-image: url(/assets/images/old-moon.png);
     color: black;
     min-height: 100vh;
