@@ -93,3 +93,12 @@ a:hover {
 .align-right {
     text-align: right;
 }
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex.space-between {
+    justify-content: space-between;
+}

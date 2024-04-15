@@ -25,12 +25,24 @@
 </section>
 <section>
     <h2>Blog</h2>
-    {#each data.posts.slice(0, 3) as post}
-        <article>
-            <h3>{post.metadata.title}</h3>
-            <p>{post.metadata.description}</p>
-            <a href={"/blog/"+post.slug}>Read more</a>
-        </article>
-    {/each}
-    <a href="/blog">Previous posts &rarr;</a>
+    <ul class="blog-posts">
+        {#each data.posts.slice(0, 5) as post}
+            <li class="flex space-between align-center">
+                <a href={"/blog/"+post.slug}>{post.metadata.title}</a>
+                <span>{new Date(post.metadata.date).toLocaleDateString(undefined, { timeZone: 'UTC', day: 'numeric', month: 'long', year: 'numeric' })} </span>
+            </li>
+        {/each}
+        <li>
+            <a href="/blog" class="float-right">Previous posts &rarr;</a>
+        </li>
+    </ul>
 </section>
+
+<style>
+    .blog-posts {
+        display: grid;
+        gap: 0.5rem;
+        list-style-type: none;
+        padding: 0;
+    }
+</style>
