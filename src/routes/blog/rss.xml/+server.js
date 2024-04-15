@@ -16,7 +16,7 @@ export async function GET({ fetch }) {
     <item>
         <guid>https://aneacsu.com/blog/${post.slug}</guid>
         <title>${post.metadata.title}</title>
-        <link>https://aneacsu.com/posts/${post.slug}</link>
+        <link>https://aneacsu.com/blog/${post.slug}</link>
         <description>${post.metadata.description}</description>
         <pubDate>${new Date(post.metadata.date).toUTCString()}</pubDate>
     </item>`
