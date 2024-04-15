@@ -12,6 +12,15 @@
 </svelte:head>
 <article>
     <h2>{data.metadata.title}</h2>
+    <small>Created {data.metadata.dateLocal}</small>
     <svelte:component this={data.content} />
     <p><a href="#head">Back to top &uarr;</a></p>
 </article>
+
+<style>
+    small {
+        position: relative;
+        top: -0.25rem;
+        font-style: italic;
+    }
+</style>
