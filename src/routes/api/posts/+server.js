@@ -13,10 +13,12 @@ export async function GET() {
             const filename = path.split('/').pop();
             const slug = filename.replace('.md', '');
             const date = filename.split('-').slice(0, 3).join('-');
+            const dateLocal = new Date(date).toLocaleDateString(undefined, { timeZone: 'UTC', day: 'numeric', month: 'long', year: 'numeric' });
             
             metadata = {
                 ...metadata,
                 date,
+                dateLocal,
             };
 
             return {

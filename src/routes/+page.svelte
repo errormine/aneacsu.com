@@ -45,7 +45,7 @@
         {#each data.posts.slice(0, 5) as post}
             <li class="flex space-between align-center">
                 <a href={"/blog/"+post.slug}>{post.metadata.title}</a>
-                <span>{new Date(post.metadata.date).toLocaleDateString(undefined, { timeZone: 'UTC', day: 'numeric', month: 'long', year: 'numeric' })} </span>
+                <span>{post.metadata.date}</span>
             </li>
         {/each}
         <li>

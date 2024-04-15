@@ -4,15 +4,40 @@
 </script>
 
 <section>
-    <h2>Blog</h2>
-    {#each data.posts as post}
-        <article>
-            <header>
-                <h3>{post.metadata.title}</h3>
-                <small>{post.metadata.date}</small>
-            </header>
-            <p>{post.metadata.description}</p>
-            <a href={"/blog/"+post.slug}>Read more</a>
-        </article>
-    {/each}
+    <header>
+        <h2>Blog</h2>
+        <p>Writings about various things... updated once in a while.</p>
+    </header>
+    <section class="blog-posts">
+        {#each data.posts as post}
+            <section class="post round-corners">
+                <header>
+                    <h3>{post.metadata.title}</h3>
+                    <small>Created {post.metadata.dateLocal}</small>
+                </header>
+                <p>{post.metadata.description}</p>
+                <a href={"/blog/"+post.slug}>Read more...</a>
+            </section>
+        {/each}
+    </section>
 </section>
+
+<style>
+    small {
+        position: relative;
+        top: -0.25rem;
+        left: 0.5rem;
+        font-style: italic;
+    }
+
+    .blog-posts {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .post {
+        background: var(--gradient-gray);
+        padding: 1rem;
+    }
+</style>
