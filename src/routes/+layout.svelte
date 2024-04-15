@@ -16,6 +16,10 @@
     }
 </script>
 
+<svelte:head>
+    <meta property="theme-color" content="#e0d5c9">
+    <meta property="og:image" content="/favicon.ico">
+</svelte:head>
 <main class="content-grid">
     <header id="head">
         <h1>Andrei Neacsu</h1>

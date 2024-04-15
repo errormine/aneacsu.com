@@ -4,6 +4,9 @@
 </script>
 
 <svelte:head>
+    <meta property="og:title" content="Andrei Neacsu">
+    <meta property="og:description" content="I'm a student in Chicago, IL. I'm also a developer, amateur photographer, and artist. I'm currently interested in video game development, and would love to share some games with you. Honestly, I have no clue what I'm doing!">
+
     <title>Andrei Neacsu</title>
 </svelte:head>
 
