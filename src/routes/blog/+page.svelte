@@ -3,6 +3,12 @@
     export let data;
 </script>
 
+<svelte:head>
+    <meta property="og:title" content="Andrei Neacsu">
+    <meta property="og:description" content="Writings about various things... updated once in a while.">
+
+    <title>Blog - Andrei Neacsu</title>
+</svelte:head>
 <section>
     <header>
         <h2>Blog</h2>
