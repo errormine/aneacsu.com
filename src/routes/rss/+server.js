@@ -4,7 +4,6 @@ export const prerender = true;
 export async function GET({ fetch }) {
     const response = await fetch('/api/posts');
     const posts = await response.json();
-    console.log(posts);
 
     const body = `<?xml version="1.0" encoding="UTF-8" ?>
     <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
@@ -18,7 +17,7 @@ export async function GET({ fetch }) {
         <guid>https://aneacsu.com/blog/${post.slug}</guid>
         <title>${post.metadata.title}</title>
         <link>https://aneacsu.com/posts/${post.slug}</link>
-        <description>${post.description}</description>
+        <description>${post.metadata.description}</description>
         <pubDate>${new Date(post.metadata.date).toUTCString()}</pubDate>
     </item>`
     ).join('')}
