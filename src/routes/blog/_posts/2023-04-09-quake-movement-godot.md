@@ -38,7 +38,7 @@ First of all, we need to do some basic set up for our game to work properly. In 
 
 Now in our Player script we can add a few lines to lock the camera to the center of the screen.
 
-```
+```gdscript
 func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 ```
@@ -49,7 +49,7 @@ For camera rotation we check if the input event is an InputEventMouseMotion and 
 
 We rotate the player about the vertical y-axis so that the screen moves left and right. Then we rotate the Head about its x-axis so that it moves the camera up and down. We also clamp this rotation to stop the camera from flipping over. Each of these inputs is multiplited by a sensitivity modifier which can be adjusted to your liking.
 
-```
+```gdscript
 # Camera
 var sensitivity = 0.05
 
@@ -71,7 +71,7 @@ func _handle_camera_rotation(event: InputEvent):
 
 Next we check for input from each direction and add it to a direction Vector3 which keeps track of what direction the user is inputting. Forward is assumed to be towards the -z-axis and you have to make sure the camera is facing that way otherwise it'll cause problems. This direction is reset every frame so that it remains up to date. We also keep track of whether the user is trying to jump by pressing the spacebar.
 
-```
+```gdscript
 var direction = Vector3()
 var wish_jump
 
@@ -111,7 +111,7 @@ The `MAX_VELOCITY_AIR` and `MAX_VELOCITY_GROUND` are used to limit the maximum v
 
 Also notice that we've added a new function in `_physics_process()`. Make sure to pass delta to the `process_movement()` function because we will need it for the physics calculations.
 
-```
+```gdscript
 # Movement
 const MAX_VELOCITY_AIR = 0.6
 const MAX_VELOCITY_GROUND = 6.0
@@ -129,7 +129,7 @@ func _physics_process(delta):
 
 I have simplified the function for clarity, but it basically boils down to checking if we're on the floor, and updating our velocity based on whether or not we are. The `update_velocity_ground()` function applies friction which makes you slow down once you stop inputting a direction and `update_velocity_air()` has no friction but your input is heavily reduced.
 
-```
+```gdscript
 func process_movement(delta):
 	# Get the normalized input direction so that we don't move faster on diagonals
 	var wish_dir = direction.normalized()
@@ -153,7 +153,7 @@ This is because of some math and technical limitations or something from the tim
 
 Friction is also applied in a funky way but it's not actually too complicated. As long as our speed is above the `STOP_SPEED` it calculutes some amount to reduce our velocity by and then does that. The amount of `friction` can be adjusted to change how quickly your character gets slowed down.
 
-```
+```gdscript
 func accelerate(wish_dir: Vector3, max_velocity: float, delta):
 	# Get our current speed as a projection of velocity onto the wish_dir
 	var current_speed = velocity.dot(wish_dir)
@@ -189,7 +189,7 @@ In our movement function, we add a new check to see if the player is attempting 
 
 We also apply the `JUMP_IMPULSE` on the player's y-axis to send the upwards. If you try the game now, you should be able to bunny hop to your heart's content.
 
-```
+```gdscript
 func process_movement(delta):
 	# Get the normalized input direction so that we don't move faster on diagonals
 	var wish_dir = direction.normalized()
