@@ -108,7 +108,7 @@ img {
 /* COMMON LAYOUTS */
 .content-grid {
     display: grid;
-    grid-template-columns: [full-width-start] 1fr [breakout-start] 2rem [main-start] minmax(10rem, 40rem) [main-end] 2rem [breakout-end] 1fr [full-width-end];
+    grid-template-columns: [full-width-start] 1fr [breakout-start] 4rem [main-start] minmax(10rem, 40rem) [main-end] 4rem [breakout-end] 1fr [full-width-end];
 }
 
 .content-grid > * {

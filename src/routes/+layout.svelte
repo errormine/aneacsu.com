@@ -17,7 +17,7 @@
 </script>
 
 <main class="content-grid">
-    <header class="breakout">
+    <header id="head">
         <h1>Andrei Neacsu</h1>
         <Breadcrumb {routes} />
     </header>

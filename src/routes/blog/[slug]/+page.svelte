@@ -11,7 +11,7 @@
     <title>{data.metadata.title}</title>
 </svelte:head>
 <article>
-    <h2 id="top">{data.metadata.title}</h2>
+    <h2>{data.metadata.title}</h2>
     <svelte:component this={data.content} />
-    <p><a href="#top">Back to top &uarr;</a></p>
+    <p><a href="#head">Back to top &uarr;</a></p>
 </article>
