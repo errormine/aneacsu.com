@@ -18,18 +18,20 @@
     --gradient-gray: linear-gradient(var(--clr-off-white), var(--clr-light-gray));
 }
 
-html {
+html, body {
     font-family: 'Source Sans 3', sans-serif;
     line-height: 1.5;
 
-    background-color: white;
+    background: white;
     color: black;
     min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5 {
+    line-height: 1.2;
     font-weight: 600;
-    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
 }
 
 h1 {
@@ -71,6 +73,11 @@ i {
     font-style: italic;
 }
 
+ul {
+    list-style-type: "/ ";
+    list-style-position: inside;
+}
+
 /* External links */
 main a[href^="http"]::after {
     content: "";
@@ -86,8 +93,6 @@ main a[href^="http"]::after {
 .content-grid, .full-width {
     display: grid;
     grid-template-columns: [left full-width-start] 1fr [main] minmax(10rem, 40rem) [right] 1fr [full-width-end];
-    grid-template-rows: repeat(auto,min-content) auto repeat(auto,min-content);
-    gap: 0.5rem 1rem;
 }
 
 .content-grid > *,
@@ -98,7 +103,6 @@ main a[href^="http"]::after {
 .content-grid > .full-width {
     grid-column: full-width;
 }
-
 
 /* UTILITY CLASSES */
 .round-corners {
