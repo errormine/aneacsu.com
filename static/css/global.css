@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 @import url('/css/reset.css');
 
 * {
@@ -25,10 +25,13 @@
     --gradient-gray: linear-gradient(var(--clr-off-white), var(--clr-light-gray));
 
     --agnostic-primary-modelight: var(--clr-primary);
+    --agnostic-primary-modedark: var(--clr-primary);
+    --agnostic-gray-mid-dark-modelight: black;
+    --agnostic-gray-mid-dark-modedark: black;
 }
 
 html, body {
-    font-family: 'Source Sans 3', sans-serif;
+    font-family: 'Andada Pro', serif;
     line-height: 1.5;
 
     background: #e0d5c9;
@@ -38,6 +41,7 @@ html, body {
 }
 
 h1, h2, h3, h4, h5 {
+    font-family: 'EB Garamond', serif;
     line-height: 1.2;
     font-weight: 600;
     margin-top: 0.5rem;
@@ -62,8 +66,6 @@ small, .text_small {
 }
 
 p {
-    font-family: serif;
-    text-align: justify;
     margin-bottom: 0.5rem;
 }
 
