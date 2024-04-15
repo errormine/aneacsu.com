@@ -7,6 +7,15 @@
 
 :root {
     --clr-primary: #9bbc0f;
+
+    --clr-off-white: #F5F5F5;
+
+    --clr-light-gray: #EDEDED;
+    --clr-gray: #C5C5C5;
+    --clr-darkish-gray: #A0A0A0;
+    --clr-dark-gray: #7A7A7A;
+
+    --gradient-gray: linear-gradient(var(--clr-off-white), var(--clr-light-gray));
 }
 
 html {
@@ -24,13 +33,11 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-    position: absolute;
-    right: 1rem;
     font-size: 4rem;
     margin-top: 0;
 }
 
-h2 {font-size: 1.75rem;}
+h2 {font-size: 2rem;}
 
 h3 {font-size: 1.5rem;}
 
@@ -60,7 +67,8 @@ a:hover {
 .content-grid, .full-width {
     display: grid;
     grid-template-columns: [left full-width-start] 1fr [main] minmax(10rem, 40rem) [right] 1fr [full-width-end];
-    row-gap: 0.5rem;
+    grid-template-rows: repeat(auto,min-content) auto repeat(auto,min-content);
+    gap: 0.5rem 1rem;
 }
 
 .content-grid > *,
@@ -70,4 +78,18 @@ a:hover {
 
 .content-grid > .full-width {
     grid-column: full-width;
+}
+
+
+/* UTILITY CLASSES */
+.round-corners {
+    border-radius: 0.5rem;
+}
+
+.float-right {
+    float: right;
+}
+
+.align-right {
+    text-align: right;
 }

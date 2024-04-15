@@ -4,10 +4,13 @@
 </script>
 
 <section>
-    <h1>Blog</h1>
+    <h2>Blog</h2>
     {#each data.posts as post}
         <article>
-            <h3>{post.metadata.title}</h3>
+            <header>
+                <h3>{post.metadata.title}</h3>
+                <small>{post.metadata.date}</small>
+            </header>
             <p>{post.metadata.description}</p>
             <a href={"/blog/"+post.slug}>Read more</a>
         </article>
