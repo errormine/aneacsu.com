@@ -3,8 +3,14 @@
     export let data;
 </script>
 
-<section>
+<article>
     <h2 id="top">{data.metadata.title}</h2>
     <svelte:component this={data.content} />
     <p><a href="#top">Back to top &uarr;</a></p>
-</section>
+</article>
+
+<style>
+    article {
+        text-indent: 2rem;
+    }
+</style>
