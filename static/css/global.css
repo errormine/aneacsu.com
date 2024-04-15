@@ -5,9 +5,14 @@
     box-sizing: border-box;
 }
 
+*:focus-visible {
+    outline: 1px solid var(--color-primary);
+    outline-offset: 1px;
+}
+
 :root {
-    --clr-primary: #9bbc0f;
-    --clr-primary-dark: #829805;
+    --clr-primary: #804E28;
+    --clr-primary-dark: #603717;
 
     --clr-off-white: #F5F5F5;
 
@@ -26,7 +31,8 @@ html, body {
     font-family: 'Source Sans 3', sans-serif;
     line-height: 1.5;
 
-    background: white;
+    background: #e0d5c9;
+    background-image: url(/assets/images/old-moon.png);
     color: black;
     min-height: 100vh;
 }
