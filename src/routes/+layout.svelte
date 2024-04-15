@@ -54,11 +54,6 @@
         background: var(--gradient-gray);
         text-align: right;
     }
-
-    nav ul {
-        position: sticky;
-        top: 0;
-    }
     
     nav li {
         padding: 0.5rem;

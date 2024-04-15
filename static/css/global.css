@@ -63,6 +63,25 @@ a:hover {
     text-decoration: underline;
 }
 
+strong {
+    font-weight: 700;
+}
+
+i {
+    font-style: italic;
+}
+
+/* External links */
+main a[href^="http"]::after {
+    content: "";
+    width: 0.6rem;
+    height: 0.6rem;
+    margin-left: 0.4rem;
+    background: url(/img/external-link.svg) no-repeat center;
+    filter: invert(77%) sepia(16%) saturate(6712%) hue-rotate(27deg) brightness(96%) contrast(88%);
+    display: inline-block;
+  }
+
 /* COMMON LAYOUTS */
 .content-grid, .full-width {
     display: grid;
