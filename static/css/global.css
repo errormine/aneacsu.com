@@ -92,18 +92,21 @@ main a[href^="http"]::after {
   }
 
 /* COMMON LAYOUTS */
-.content-grid, .full-width {
+.content-grid {
     display: grid;
-    grid-template-columns: [left full-width-start] 1fr [main] minmax(10rem, 40rem) [right] 1fr [full-width-end];
+    grid-template-columns: [full-width-start] 1fr [breakout-start] 2rem [main-start] minmax(10rem, 40rem) [main-end] 2rem [breakout-end] 1fr [full-width-end];
 }
 
-.content-grid > *,
-.full-width > * {
+.content-grid > * {
     grid-column: main;
 }
 
 .content-grid > .full-width {
     grid-column: full-width;
+}
+
+.content-grid > .breakout {
+    grid-column: breakout;
 }
 
 /* UTILITY CLASSES */

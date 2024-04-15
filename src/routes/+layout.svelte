@@ -18,21 +18,13 @@
     }
 </script>
 
-<header>
-    <h1>Andrei Neacsu</h1>
-</header>
-<nav>
-    <Breadcrumb {routes} />
-</nav>
 <main class="content-grid">
+    <header class="breakout">
+        <h1>Andrei Neacsu</h1>
+        <Breadcrumb {routes} />
+    </header>
     <slot/>
     <footer>
         Created with love for the web.
     </footer>
 </main>
-
-<style>
-    h1 {
-        padding-left: 2rem;
-    }
-</style>
