@@ -27,7 +27,7 @@
             <p>Created with love for the web.</p>
             <section class="contact">
                 <Bubble href="mailto:andrei@aneacsu.com">Email</Bubble>
-                <Bubble href="https://infosec.exchange/@errormine">Mastodon</Bubble>
+                <Bubble rel="me" href="https://infosec.exchange/@errormine">Mastodon</Bubble>
                 <Bubble href="https://github.com/prycaustic">GitHub</Bubble>
             </section>
         </header>

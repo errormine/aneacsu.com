@@ -1,8 +1,9 @@
 <script>
     export let href = "";
+    export let rel = "";
 </script>
 
-<a {href} class="bubble"><slot/></a>
+<a {rel} {href} class="bubble"><slot/></a>
 
 <style>
     a {
