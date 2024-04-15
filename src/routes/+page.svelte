@@ -10,18 +10,6 @@
 <section>
     <h2>About</h2>
     <p>I'm a student in Chicago, IL. I'm also a developer, amateur photographer, and artist. I'm currently interested in video game development, and would love to share some games with you. Honestly, I have no clue what I'm doing! I'm just trying to make fun stuff and learn as much as I can along the way.</p>
-    <p>Social links: </p>
-    <ul class="bubbles">
-        <li>
-            <a href="mailto:andrei@aneacsu.com">Email</a>
-        </li>
-        <li>
-            <a href="https://github.com/prycaustic">GitHub</a>
-        </li>
-        <li>
-            <a rel="me" href="https://infosec.exchange/@errormine">Mastodon</a>
-        </li>
-    </ul>
 </section>
 <section>
     <h2>Blog</h2>
@@ -83,29 +71,5 @@
         gap: 0.5rem;
         list-style-type: none;
         padding: 0;
-    }
-
-    .bubbles {
-        display: flex;
-        gap: 1rem;
-        list-style-type: none;
-    }
-    
-    .bubbles li a {
-        display: block;
-        position: relative;
-        background: var(--gradient-primary);
-        color: white;
-        border: 1px solid var(--clr-primary-dark);
-        padding: 0.2rem 1rem;
-        border-radius: 100px;
-        top: 0;
-        transition: top 200ms;
-    }
-
-    .bubbles li a:hover,
-    .bubbles li a:focus {
-        text-decoration: none;
-        top: -0.2rem;
     }
 </style>
