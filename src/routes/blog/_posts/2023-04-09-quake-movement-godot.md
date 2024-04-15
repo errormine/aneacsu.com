@@ -8,7 +8,7 @@ About a year ago, I wanted to try making an FPS game using Godot 3.5. I really l
 
 This guide will cover how to implement just the character controls and nothing else. The system I've come up with has smooth movement and the "bug" that lets you bunny hop and surf like in Half-life. I assume you have a decent grasp of the fundamentals of Godot, and I won't be explaining everything in complete detail. However, all the code and information you need to get it working for yourself should be on this page.
 
-Here is a [video example of the script working in game](https://youtu.be/ssU6ec_um78).
+Here is a [video example of the script working in game](https://youtu.be/ssU6ec_um78)
 
 If you would like to download the project files they are also available: [FPS_Player_Controller.zip](/assets/files/FPS%20Player%20Controller.zip)
 
@@ -20,7 +20,7 @@ First, we need to set up our Player scene. It is just a CharacterController3D wi
 
 The CollisionShape3D is a CylinderShape with a height of 1.4m and radius of 0.5m. This is a rough approximation of the player height in Half-life based on the GoldSrc hammer units to real world meters. I've also decided to use a cylinder for the player shape even though Half-life uses a box because it seems to be slightly better at not getting stuck on world geometry, and it is usually the standard that I see nowadays.
 
-*EDIT 2023-04-28: I've found that the CylinderShape is actually quite buggy and not as reliable as I initially thought. After a bit of testing, I recommend using a BoxShape instead as it seems to not suffer from any of the issues like the cylinder. I will update again if necessary.
+*EDIT 2023-04-28: I've found that the CylinderShape is actually quite buggy and not as reliable as I initially thought. After a bit of testing, I recommend using a capsule instead as it seems to not suffer from any of the issues like the cylinder. I will update again if necessary.
 
 ![The CollisionShape3D](/assets/images/qm-collisionshape3d.jpg)
 
