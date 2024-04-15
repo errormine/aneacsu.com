@@ -41,7 +41,7 @@
         <img src="/img/kot.png" alt="A cat meditating">
     </section>
     <section class="flex-center">
-        <p>Add my blog to your <a href="/rss">RSS Feed</a></p>
+        <p>Add my blog to your <a href="/blog/rss.xml">RSS Feed</a></p>
         <p>Bored and confused? Read a <a href="https://en.wikipedia.org/wiki/Special:Random">random Wikipedia article</a></p>
         <p>&ldquo;<i>Round the Calendar in Portugal&rdquo;</i> courtesy of <a href="https://www.flickr.com/photos/britishlibrary/11114321176/in/album-72157672074712488/">The British Library</a></p>
     </section>
