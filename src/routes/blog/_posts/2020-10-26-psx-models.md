@@ -1,6 +1,6 @@
 ---
 layout: blog-post
-title: Learning Blender
+title: Fun with low poly modeling
 description: "Some of my experience working with Blender."
 ---
 
