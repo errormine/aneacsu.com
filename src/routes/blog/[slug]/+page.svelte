@@ -4,6 +4,9 @@
 </script>
 
 <svelte:head>
+    <meta property="og:title" content="{data.metadata.title}">
+    <meta property="og:description" content="{data.metadata.description}">
+
     <link rel="stylesheet" href="/css/prism-cb.css">
     <title>{data.metadata.title}</title>
 </svelte:head>
