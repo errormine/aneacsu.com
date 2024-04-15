@@ -57,7 +57,7 @@ p {
     margin-bottom: 0.5rem;
 }
 
-article > p {
+article p:first-of-type {
     text-indent: 2rem;
 }
 
