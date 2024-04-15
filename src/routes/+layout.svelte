@@ -3,9 +3,6 @@
     import { Breadcrumb } from 'agnostic-svelte';
     import 'agnostic-svelte/css/common.min.css';
 
-    // Ensures pages are staticly prerendered
-    export const prerender = true;
-
     let routes = [
         { label: 'home', url: '/' }
     ];
