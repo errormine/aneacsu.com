@@ -8,9 +8,3 @@
     <svelte:component this={data.content} />
     <p><a href="#top">Back to top &uarr;</a></p>
 </article>
-
-<style>
-    article > p {
-        text-indent: 2rem;
-    }
-</style>

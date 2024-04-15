@@ -16,26 +16,17 @@ If you would like to download the project files they are also available: [FPS_Pl
 
 First, we need to set up our Player scene. It is just a CharacterController3D with a CollisionShape and a Node3D called "Head" which holds our camera.
 
-<figure>
-    <img src="/assets/images/qm-player-structure.jpg" alt="">
-    <figcaption>The Player scene structure</figcaption>
-</figure>
+![The Player scene structure](/assets/images/qm-player-structure.jpg)
 
 The CollisionShape3D is a CylinderShape with a height of 1.4m and radius of 0.5m. This is a rough approximation of the player height in Half-life based on the GoldSrc hammer units to real world meters. I've also decided to use a cylinder for the player shape even though Half-life uses a box because it seems to be slightly better at not getting stuck on world geometry, and it is usually the standard that I see nowadays.
 
 *EDIT 2023-04-28: I've found that the CylinderShape is actually quite buggy and not as reliable as I initially thought. After a bit of testing, I recommend using a BoxShape instead as it seems to not suffer from any of the issues like the cylinder. I will update again if necessary.
 
-<figure>
-    <img src="/assets/images/qm-collisionshape3d.jpg" alt="">
-    <figcaption>The CollisionShape3D</figcaption>
-</figure>
+![The CollisionShape3D](/assets/images/qm-collisionshape3d.jpg)
 
 I've  moved the head up by 0.6m to put it at around eye level. Also make sure that the camera is facing in the -z direction in order for the movement script to work correctly.
 
-<figure>
-    <img src="/assets/images/qm-player-scene.jpg" alt="">
-    <figcaption>The Player scene</figcaption>
-</figure>
+![The Player scene](/assets/images/qm-player-scene.jpg)
 
 Now comes the fun part of creating the player movement script. This is put together from various online resource examining the Quake movement code as well as whatever I could decipher from the Half-life source code. The basis of the script is primarily from [this article](https://adrianb.io/2015/02/14/bunnyhop.html). Matt's [video](https://youtu.be/rTsXO6Zicls) was also incredibly helpful for understanding how bunny hopping even works in the first place.
 
@@ -43,10 +34,7 @@ So how does it work? Well, I'm not going to try to give a technical explanation 
 
 First of all, we need to do some basic set up for our game to work properly. In the project settings, we need a few input maps to get input from the player. I've added basic WASD controls and a jump button for now.
 
-<figure>
-    <img src="/assets/images/qm-input-map.jpg" alt="Godot Input Map with forward (W key), backward (S key), left (A key), right (D key), and jump (SPACE)">
-    <figcaption>Basic input</figcaption>
-</figure>
+![Godot Input Map with forward (W key), backward (S key), left (A key), right (D key), and jump (SPACE)](/assets/images/qm-input-map.jpg)
 
 Now in our Player script we can add a few lines to lock the camera to the center of the screen.
 
