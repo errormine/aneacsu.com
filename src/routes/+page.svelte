@@ -91,8 +91,9 @@
         gap: 1rem;
         list-style-type: none;
     }
-
+    
     .bubbles li a {
+        display: block;
         position: relative;
         background: var(--gradient-primary);
         color: white;
