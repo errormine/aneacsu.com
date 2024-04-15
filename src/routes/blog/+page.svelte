@@ -37,7 +37,7 @@
     }
 
     .post {
-        background: var(--gradient-gray);
+        border: 1px solid var(--clr-primary);
         padding: 1rem;
     }
 </style>
