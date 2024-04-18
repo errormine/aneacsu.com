@@ -1,8 +1,3 @@
-<script>
-    /** @type {import('./$types').PageData} */
-    export let data;
-</script>
-
 <section>
     <h2>About me</h2>
     <p>I'm a creative based in Chicago, IL. I enjoy tinkering and building things in my free time. My interests include programming, photography, and digital art. I would like to spend more time hiking, traveling, and visitng new places.</p>

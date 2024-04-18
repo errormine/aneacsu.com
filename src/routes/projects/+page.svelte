@@ -5,7 +5,7 @@
     </header>
     <ol>
         <li>
-            <strong class="float-right">2024</strong> <a href="#">Viewfinder</a>
+            <strong class="float-right">2024</strong> <a href="/">Viewfinder</a>
             <p>A social image-sharing website created for my senior capstone course. Built with SvelteKit, MariaDB, and lucia.</p>
         </li>
         <li>
