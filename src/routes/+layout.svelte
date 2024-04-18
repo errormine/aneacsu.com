@@ -40,7 +40,7 @@
             <p>It was created using <a href="https://kit.svelte.dev/">SvelteKit</a> and <a href="https://www.agnosticui.com/">Agnostic UI</a></p>
             <p>All of the code for this website is in the public domain</p>
         </section>
-        <section>
+        <section class="cat">
             <img src="/img/kot.png" alt="A cat meditating">
         </section>
         <section class="flex-center">
@@ -72,5 +72,17 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+    }
+
+    @media (max-width: 40rem) {
+        footer {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cat {
+            max-width: 10rem;
+            margin: 0 auto;
+        }
     }
 </style>

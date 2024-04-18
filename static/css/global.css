@@ -123,6 +123,16 @@ img {
     grid-column: breakout;
 }
 
+@media (max-width: 40rem) {
+    .content-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        width: 90vw;
+        margin: 0 auto;
+    }
+}
+
 /* UTILITY CLASSES */
 .round-corners {
     border-radius: 0.5rem;
