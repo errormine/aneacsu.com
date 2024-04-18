@@ -7,7 +7,6 @@
 
 <style>
     a {
-        display: inline-block;
         position: relative;
         background: var(--gradient-primary);
         color: white;
