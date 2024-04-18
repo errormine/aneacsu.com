@@ -14,17 +14,23 @@
     <h2>About</h2>
     <p>I'm a student in Chicago, IL. I'm also a developer, amateur photographer, and artist. I'm currently interested in video game development, and would love to share some games with you. Honestly, I have no clue what I'm doing!</p>
 </section>
-<section>
-    <h2>Projects</h2>
-    <p>Various projects which I've worked on over the years. Some are finished, some are not.</p>
+<section class="projects">
+    <header>
+        <h2>Projects</h2>
+        <p>Various projects which I've worked on over the years.</p>
+    </header>
     <ol>
+        <li>
+            <strong class="float-right">2024</strong> <a href="#">Viewfinder</a>
+            <p>A social image-sharing website created for my senior capstone course. Built with SvelteKit, MariaDB, and lucia.</p>
+        </li>
         <li>
             <strong class="float-right">2024</strong> <a href="https://github.com/prycaustic/plica-garden">Plica Garden</a>
             <p>VERY simple web front-end for notes / images / other media. Made using Python Flask and vanilla JS.</p>
         </li>
         <li>
             <strong class="float-right">2023</strong> <a href="https://github.com/SlopCrew/SlopCrew">SlopCrew</a>
-            <p>It's a Bomb Rush Cyberfunk multiplayer mod. Skate around with your friends. Originally created by <a href="https://notnite.com/">notnite</a></p>
+            <p>It's a Bomb Rush Cyberfunk multiplayer mod. Skate around with your friends. Originally created by <a href="https://notnite.com/">notnite</a>.</p>
         </li>
         <li>
             <strong class="float-right">2023</strong><a href="https://errormine.itch.io/the-library-of-babel">The Library of Babel</a>
@@ -36,25 +42,25 @@
         </li>
         <li>
             <strong class="float-right">2023</strong><a href="https://errormine.itch.io/creoterra">Creoterra</a>
-            <p>Bring life to an empty planet. Very basic sandbox game which grows as you play it. This was created for the first ever Experimental Game Jam "Grid". I wanted to make something very simple that would develop around your actions. It's a bit unfinished since I ran out of time, but I'm hoping to keep learning and make more!</p>
+            <p>Bring life to an empty planet. Very basic sandbox game which grows as you play it.</p>
         </li>
         <li>
             <strong class="float-right">2023</strong><a href="https://errormine.itch.io/boing">Boing!</a>
-            <p>Jump on a trampoline for as long as you can. This is a crappy clone of the WarioWare mini-game of the same name. It's the first thing I created using Godot 3.5, and I think it's pretty cute.</p>
+            <p>Jump on a trampoline for as long as you can.</p>
         </li>
         <li>
             <strong class="float-right">2021</strong><a href="https://errormine.net/">errormine.net</a>
-            <p>My own little page on Neocities! I discovered this place while trying to solve some silly ARG. I've met some great friends on there since then.</p>
+            <p>My own little page on Neocities!</p>
         </li>
         <li>
             <strong class="float-right">2019</strong> <a href="https://github.com/prycaustic/bent-bot">bent-bot</a>
-            <p>A really terrible Discord bot written with Java which I made in high school. It is mildly embarassing.</p>
+            <p>A really terrible Discord bot written with Java which I made in high school.</p>
         </li>
     </ol>
 </section>
 <section>
     <h2>Blog</h2>
-    <ul class="blog-posts">
+    <ol class="blog-posts">
         {#each data.posts.slice(0, 5) as post}
             <li class="flex space-between align-center">
                 <a href={"/blog/"+post.slug}>{post.metadata.title}</a>
@@ -64,10 +70,22 @@
         <li>
             <a href="/blog" class="float-right">Previous posts &rarr;</a>
         </li>
-    </ul>
+    </ol>
 </section>
 
 <style>
+    .projects ol {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    .projects li {
+        padding: 0.5rem;
+        border: 1px solid var(--clr-primary);
+        border-radius: 0.5rem;
+    }
+
     .blog-posts {
         display: grid;
         gap: 0.5rem;
