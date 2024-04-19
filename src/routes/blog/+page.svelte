@@ -18,13 +18,10 @@
         {#each data.posts as post}
             <section class="post round-corners">
                 <header>
-                    {#if post.metadata.banner}
-                        <img src={post.metadata.banner} alt={post.metadata.alt}>
-                    {/if}
                     <h3><a href={"/blog/"+post.slug}>{post.metadata.title}</a></h3>
+                    <small>Created {post.metadata.dateLocal}</small>
+                    <p>{post.metadata.description}</p>
                 </header>
-                <p>{post.metadata.description}</p>
-                <small>Created {post.metadata.dateLocal}</small>
             </section>
         {/each}
     </section>
@@ -37,7 +34,7 @@
         left: 0.5rem;
         font-style: italic;
     }
-
+    
     .blog-posts {
         display: flex;
         flex-direction: column;

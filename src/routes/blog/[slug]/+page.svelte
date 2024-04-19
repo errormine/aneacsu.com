@@ -14,7 +14,7 @@
 <article>
     <header>
         {#if data.metadata.banner}
-            <img src={data.metadata.banner} alt={data.metadata.alt}>
+            <img class="banner" src={data.metadata.banner} alt={data.metadata.alt}>
         {/if}
         <h2>{data.metadata.title}</h2>
         <small>Created {data.metadata.dateLocal}</small>
@@ -24,9 +24,14 @@
 </article>
 
 <style>
+    .banner {
+        margin: 1rem 0;
+    }
+
     small {
         position: relative;
         top: -0.25rem;
+        left: 0.5rem;
         font-style: italic;
     }
 </style>

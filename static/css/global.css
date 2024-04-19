@@ -2,6 +2,7 @@
 @import url('/css/reset.css');
 
 * {
+    scroll-behavior: smooth;
     box-sizing: border-box;
 }
 
@@ -70,8 +71,8 @@ p {
     margin-bottom: 0.5rem;
 }
 
-article p:first-of-type {
-    text-indent: 2rem;
+article > p {
+    margin-bottom: 1rem;
 }
 
 a {
