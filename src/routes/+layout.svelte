@@ -18,7 +18,7 @@
 
 <svelte:head>
     <meta property="theme-color" content="#e0d5c9">
-    <meta property="og:image" content="/favicon.ico">
+    <meta property="og:image" content="/img/favicon.png">
     <meta content="Andrei Neacsu" property="og:site_name">
 </svelte:head>
 <main class="content-grid">
