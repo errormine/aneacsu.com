@@ -18,6 +18,9 @@
         {#each data.posts as post}
             <section class="post round-corners">
                 <header>
+                    {#if post.metadata.banner}
+                        <img src={post.metadata.banner} alt={post.metadata.alt}>
+                    {/if}
                     <h3><a href={"/blog/"+post.slug}>{post.metadata.title}</a></h3>
                 </header>
                 <p>{post.metadata.description}</p>

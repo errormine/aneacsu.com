@@ -105,6 +105,10 @@ img {
     margin: 0 auto;
 }
 
+figcaption {
+    text-align: center;
+}
+
 /* COMMON LAYOUTS */
 .content-grid {
     display: grid;
