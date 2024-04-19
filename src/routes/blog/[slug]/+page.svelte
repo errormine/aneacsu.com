@@ -6,7 +6,9 @@
 <svelte:head>
     <meta property="og:title" content="{data.metadata.title}">
     <meta property="og:description" content="{data.metadata.description}">
-    <meta property="og:image" content="{data.metadata.banner}">
+    {#if data.metadata.banner}
+        <meta property="og:image" content="{data.metadata.banner}">
+    {/if}
 
     <link rel="stylesheet" href="/css/prism-cb.css">
     <title>{data.metadata.title}</title>
