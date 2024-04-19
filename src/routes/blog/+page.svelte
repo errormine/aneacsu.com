@@ -18,11 +18,10 @@
         {#each data.posts as post}
             <section class="post round-corners">
                 <header>
-                    <h3>{post.metadata.title}</h3>
-                    <small>Created {post.metadata.dateLocal}</small>
+                    <h3><a href={"/blog/"+post.slug}>{post.metadata.title}</a></h3>
                 </header>
                 <p>{post.metadata.description}</p>
-                <a href={"/blog/"+post.slug}>Read more...</a>
+                <small>Created {post.metadata.dateLocal}</small>
             </section>
         {/each}
     </section>
@@ -39,11 +38,6 @@
     .blog-posts {
         display: flex;
         flex-direction: column;
-        gap: 1rem;
-    }
-
-    .post {
-        border: 1px solid var(--clr-primary);
-        padding: 1rem;
+        gap: 0.5rem;
     }
 </style>
