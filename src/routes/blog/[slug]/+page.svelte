@@ -34,4 +34,13 @@
         left: 0.5rem;
         font-style: italic;
     }
+
+    :global(code) {
+        font-family: monospace;
+        background-color: var(--clr-dark-brown);
+        color: var(--clr-off-white);
+        font-size: 0.8rem;
+        padding: 0.2rem;
+        border-radius: 0.2rem;
+    }
 </style>
