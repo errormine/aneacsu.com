@@ -34,7 +34,7 @@
                 <Bubble href="mailto:andrei@aneacsu.com">Email</Bubble>
                 <Bubble href="https://www.linkedin.com/in/andrei-neacsu-293421305/">LinkedIn</Bubble>
                 <Bubble rel="me" href="https://infosec.exchange/@errormine">Mastodon</Bubble>
-                <Bubble href="https://github.com/prycaustic">GitHub</Bubble>
+                <Bubble href="https://github.com/errormine">GitHub</Bubble>
             </section>
         </header>
         <section class="align-right flex-center">
