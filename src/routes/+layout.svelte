@@ -70,6 +70,13 @@
         text-align: center;
     }
 
+    footer > header .contact {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
     footer .flex-center {
         display: flex;
         flex-direction: column;
