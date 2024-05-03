@@ -5,11 +5,11 @@
     </header>
     <ol>
         <li>
-            <strong class="float-right">2024</strong> <a href="/">Viewfinder</a>
+            <strong class="float-right">2024</strong> <a href="https://github.com/errormine/viewfinder">Viewfinder</a>
             <p>A social image-sharing website created for my senior capstone course. Built with SvelteKit, MariaDB, and lucia.</p>
         </li>
         <li>
-            <strong class="float-right">2024</strong> <a href="https://github.com/prycaustic/plica-garden">Plica Garden</a>
+            <strong class="float-right">2024</strong> <a href="https://github.com/errormine/plica-garden">Plica Garden</a>
             <p>VERY simple web front-end for notes / images / other media. Made using Python Flask and vanilla JS.</p>
         </li>
         <li>
@@ -37,7 +37,7 @@
             <p>My own little page on Neocities!</p>
         </li>
         <li>
-            <strong class="float-right">2019</strong> <a href="https://github.com/prycaustic/bent-bot">bent-bot</a>
+            <strong class="float-right">2019</strong> <a href="https://github.com/errormine/bent-bot">bent-bot</a>
             <p>A really terrible Discord bot written with Java which I made in high school.</p>
         </li>
     </ol>
