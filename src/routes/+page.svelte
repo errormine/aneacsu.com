@@ -17,7 +17,7 @@
 </section>
 <section>
     <h2>Projects</h2>
-    <p>I'm currently busy finishing up my education, however, I try to create as much as I can in my free time. Here you can find various thing I've worked on and released to the public. Some of them are finished, some of them aren't. </p>
+    <p>Here be dragons.</p>
     <p><a href="/projects" class="float-right">Projects &rarr;</a></p>
 </section>
 <section>
