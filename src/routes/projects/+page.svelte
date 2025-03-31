@@ -5,6 +5,10 @@
     </header>
     <ol>
         <li>
+            <strong class="float-right">2024</strong> <a href="https://github.com/errormine/sable">Sable</a>
+            <p>A simple music player made with Tauri + Svelte. </p>
+        </li>
+        <li>
             <strong class="float-right">2024</strong> <a href="https://github.com/errormine/viewfinder">Viewfinder</a>
             <p>A social image-sharing website created for my senior capstone course. Built with SvelteKit, MariaDB, and lucia.</p>
         </li>
@@ -33,7 +37,7 @@
             <p>Jump on a trampoline for as long as you can.</p>
         </li>
         <li>
-            <strong class="float-right">2021</strong><a href="https://errormine.net/">errormine.net</a>
+            <strong class="float-right">2021</strong><a href="https://errormine.neocities.org/">errormine.net</a>
             <p>My own little page on Neocities!</p>
         </li>
         <li>
