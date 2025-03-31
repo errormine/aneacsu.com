@@ -1,6 +1,7 @@
 <script>
     import { page } from '$app/stores';
     import Bubble from '$lib/components/Bubble.svelte';
+    import Breadcrumb from '$lib/components/Breadcrumb.svelte';
 
     let routes = [
         { label: 'home', url: '/' }
@@ -22,6 +23,7 @@
 <main class="content-grid">
     <header id="head">
         <h1>Andrei Neacsu</h1>
+        <Breadcrumb {routes} />
     </header>
     <slot/>
     <footer>

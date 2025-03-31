@@ -27,11 +27,6 @@
 
     --gradient-primary: linear-gradient(var(--clr-primary), var(--clr-primary-dark));
     --gradient-gray: linear-gradient(var(--clr-off-white), var(--clr-light-gray));
-
-    --agnostic-primary-modelight: var(--clr-primary);
-    --agnostic-primary-modedark: var(--clr-primary);
-    --agnostic-gray-mid-dark-modelight: black;
-    --agnostic-gray-mid-dark-modedark: black;
 }
 
 html, body {
