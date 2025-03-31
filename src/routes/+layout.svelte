@@ -38,7 +38,7 @@
         </header>
         <section class="align-right flex-center">
             <p>This website is <a href="https://github.com/errormine/aneacsu.com">open source</a></p>
-            <p>It was created using <a href="https://kit.svelte.dev/">SvelteKit</a> and <a href="https://www.agnosticui.com/">Agnostic UI</a></p>
+            <p>It was created using <a href="https://kit.svelte.dev/">SvelteKit</a></p>
             <p>All of the code for this website is in the public domain</p>
         </section>
         <section class="cat">
