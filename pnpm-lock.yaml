@@ -7,10 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      agnostic-svelte:
-        specifier: ^1.1.27
-        version: 1.1.27(svelte@4.2.19)
     devDependencies:
       '@sveltejs/adapter-auto':
         specifier: ^3.3.1
@@ -342,19 +338,10 @@ packages:
   '@types/unist@2.0.11':
     resolution: {integrity: sha512-CmBKiL6NNo/OqgmMn95Fk9Whlp2mtvIv+KNpQKN2F4SjvrEesubTRWGYSg+BnWZOnlCaSTU1sMpsBOzgbYhnsA==}
 
-  a11y-dialog@7.5.3:
-    resolution: {integrity: sha512-ssx2j2FIgxhycE+liCKRam/S7F2TJyDJd8FwaoDS3vq5+yVTSg4dJAQPJr1abJLOlNmsjl5iAGE0VIp0x7gikg==}
-
   acorn@8.14.1:
     resolution: {integrity: sha512-OvQ/2pUDKmgfCg++xsTX1wGxfTaszcHVcTctW4UJB4hibJx2HXxxO5UmVgyjMa+ZDsiaf5wWLXYpRWMmBI0QHg==}
     engines: {node: '>=0.4.0'}
     hasBin: true
-
-  agnostic-helpers@1.0.3:
-    resolution: {integrity: sha512-JIw3qhtSe+UqZEbVKQgjKdFNnJ9KphX8voQDGgBAAo1x+Svyj4pAHwVovVtJpXSVoBLIqnTbdQNHetKZk7pTZQ==}
-
-  agnostic-svelte@1.1.27:
-    resolution: {integrity: sha512-wV0JbTr1Jbkh8/YRWVvWsQ2aFY+std/rG0avADm7romk1Zptdyh8j2+507PvQHKSl3lqsCeDx7yLFq5SWfANIw==}
 
   aria-query@5.3.2:
     resolution: {integrity: sha512-COROpnaoap1E2F000S62r6A60uHZnmlvomhfyT2DlTcrY1OrBKn2UhH7qn5wTC9zMvD0AY7csdPSNwKP+7WiQw==}
@@ -401,9 +388,6 @@ packages:
 
   estree-walker@3.0.3:
     resolution: {integrity: sha512-7RUKfXgSMMkzt6ZuXmqapOurLGPPfgj6l9uRZ7lRGolvk0y2yocc35LdcxKC5PQZdn2DMqioAQ2NoWcrTKmm6g==}
-
-  focusable-selectors@0.4.0:
-    resolution: {integrity: sha512-tc/236hUU3xemsRLu1RKhRQ5UWHjRM9iJTli1zdac43h7b1biRSgG0mILM0qrcsKaGCHcOPJ6NKbk12ouKHLpw==}
 
   fsevents@2.3.3:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
@@ -486,11 +470,6 @@ packages:
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
-
-  svelte-a11y-dialog@0.2.0:
-    resolution: {integrity: sha512-sVJ6SbLABFfbeNNcsFpHA7VY4S1MXC8rZ9AzNtOMWjxwiwTc0Xl3ZSUYbz7ixbxLr4tDDVoZmb7xQTzLbTyZag==}
-    peerDependencies:
-      svelte: ^3.44.0
 
   svelte-hmr@0.16.0:
     resolution: {integrity: sha512-Gyc7cOS3VJzLlfj7wKS0ZnzDVdv3Pn2IuVeJPk9m2skfhcu5bq3wtIZyQGggr7/Iim5rH5cncyQft/kRLupcnA==}
@@ -761,20 +740,7 @@ snapshots:
 
   '@types/unist@2.0.11': {}
 
-  a11y-dialog@7.5.3:
-    dependencies:
-      focusable-selectors: 0.4.0
-
   acorn@8.14.1: {}
-
-  agnostic-helpers@1.0.3: {}
-
-  agnostic-svelte@1.1.27(svelte@4.2.19):
-    dependencies:
-      agnostic-helpers: 1.0.3
-      svelte-a11y-dialog: 0.2.0(svelte@4.2.19)
-    transitivePeerDependencies:
-      - svelte
 
   aria-query@5.3.2: {}
 
@@ -834,8 +800,6 @@ snapshots:
   estree-walker@3.0.3:
     dependencies:
       '@types/estree': 1.0.7
-
-  focusable-selectors@0.4.0: {}
 
   fsevents@2.3.3:
     optional: true
@@ -929,11 +893,6 @@ snapshots:
       totalist: 3.0.1
 
   source-map-js@1.2.1: {}
-
-  svelte-a11y-dialog@0.2.0(svelte@4.2.19):
-    dependencies:
-      a11y-dialog: 7.5.3
-      svelte: 4.2.19
 
   svelte-hmr@0.16.0(svelte@4.2.19):
     dependencies:
