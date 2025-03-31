@@ -5,15 +5,16 @@
 
 <svelte:head>
     <meta property="og:title" content="Andrei Neacsu">
-    <meta property="og:description" content="I'm a student in Chicago, IL. I'm also a developer, amateur photographer, and artist. I'm currently interested in video game development, and would love to share some games with you. Honestly, I have no clue what I'm doing!">
+    <meta property="og:description" content="Hello, I am a human being. Honestly, I have no clue what I'm doing!">
 
     <title>Andrei Neacsu</title>
 </svelte:head>
 
 <section>
-    <h2>Welcome</h2>
-    <p>I'm a student in Chicago, IL. I'm also a developer, amateur photographer, and artist. I'm currently interested in video game development, and would love to share some games with you. Honestly, I have no clue what I'm doing!</p>
-    <p><a href="/about" class="float-right">About &rarr;</a></p>
+    <h2>About</h2>
+    <p>Hello, I am a human being. Honestly, I have no clue what I'm doing!</p>
+    <p>I enjoy tinkering and building things in my free time. My interests include game development, photography, and digital art.</p>
+    <p>I would like to spend more time hiking, traveling, and learning new things.</p>
 </section>
 <section>
     <h2>Projects</h2>

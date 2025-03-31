@@ -1,7 +1,5 @@
 <script>
     import { page } from '$app/stores';
-    import { Breadcrumb } from 'agnostic-svelte';
-    import 'agnostic-svelte/css/common.min.css';
     import Bubble from '$lib/components/Bubble.svelte';
 
     let routes = [
@@ -24,21 +22,20 @@
 <main class="content-grid">
     <header id="head">
         <h1>Andrei Neacsu</h1>
-        <Breadcrumb {routes} />
     </header>
     <slot/>
     <footer>
         <header>
             <p>Created with love for the web.</p>
             <section class="contact">
-                <Bubble href="mailto:andrei@aneacsu.com">Email</Bubble>
+                <Bubble href="mailto:andnea823@gmail.com">Email</Bubble>
                 <Bubble href="https://www.linkedin.com/in/andrei-neacsu-293421305/">LinkedIn</Bubble>
-                <Bubble rel="me" href="https://infosec.exchange/@errormine">Mastodon</Bubble>
+                <Bubble rel="me" href="https://bsky.app/profile/errormine.bsky.social">Bluesky</Bubble>
                 <Bubble href="https://github.com/errormine">GitHub</Bubble>
             </section>
         </header>
         <section class="align-right flex-center">
-            <p>This website is <a href="https://github.com/prycaustic/aneacsu.com">open source</a></p>
+            <p>This website is <a href="https://github.com/errormine/aneacsu.com">open source</a></p>
             <p>It was created using <a href="https://kit.svelte.dev/">SvelteKit</a> and <a href="https://www.agnosticui.com/">Agnostic UI</a></p>
             <p>All of the code for this website is in the public domain</p>
         </section>
